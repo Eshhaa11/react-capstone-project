@@ -9,5 +9,6 @@ function Home ()  {
          <p>Your go-to destination for trending products.</p>
         </div>
     )
-
 }
+
+export default Home;
