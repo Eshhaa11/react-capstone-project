@@ -6,7 +6,7 @@ function Home ()  {
     return (
         <div className="home-cont">
          <h1>Welcome to QuickCart</h1>   
-         <p></p>
+         <p>Your go-to destination for trending products.</p>
         </div>
     )
 
