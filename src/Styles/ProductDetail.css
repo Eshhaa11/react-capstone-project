@@ -1,0 +1,52 @@
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #FAFAFA;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.detail-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.detail-info {
+  max-width: 500px;
+}
+
+.detail-info h2 {
+  color: #009688;
+  margin-bottom: 0.5rem;
+}
+
+.detail-price {
+  color: #FF6F61;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.detail-info button {
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
