@@ -1,32 +1,60 @@
-import { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import products from '../data/productdata';
 import { CartContext } from '../Context/CartContext';
 import '../Styles/Products.css';
-
 
 const Products = () => {
   const { addToCart } = useContext(CartContext);
   const categories = [...new Set(products.map(p => p.category))];
 
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchTerm, setSearchTerm] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+
+  const filteredProducts = products.filter(p => {
+    const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
+    const matchesSearch = p.title.toLowerCase().includes(searchTerm.toLowerCase());
+    return inCategory && matchesSearch;
+  });
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    setAlertMessage(`${product.title} added to cart!`);
+    setTimeout(() => setAlertMessage(''), 2000);
+  };
+
   return (
-    <div className="products-container">
+    <div className="products-page">
       <h2>Shop by Category</h2>
-      {categories.map(category => (
-        <div key={category} className="product-category">
-          <h3>{category}</h3>
-          <div className="product-list">
-            {products.filter(p => p.category === category).map(product => (
-              <div key={product.id} className="product-card">
-                <img src={product.image} alt={product.title} />
-                <h4>{product.title}</h4>
-                <p>{product.description}</p>
-                <p>${product.price.toFixed(2)}</p>
-                <button onClick={() => addToCart(product)}>Add to Cart</button>
-              </div>
-            ))}
+
+     
+
+      <div className="category-buttons">
+        <button onClick={() => setSelectedCategory('All')} className={selectedCategory === 'All' ? 'active' : ''}>All</button>
+        {categories.map(cat => (
+          <button
+            key={cat}
+            className={selectedCategory === cat ? 'active' : ''}
+            onClick={() => setSelectedCategory(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {alertMessage && <div className="cart-alert">{alertMessage}</div>}
+
+      <div className="product-grid">
+        {filteredProducts.map(product => (
+          <div key={product.id} className="product-card">
+            <img src={product.image} alt={product.title} />
+            <h4>{product.title}</h4>
+            <p>{product.description}</p>
+            <p className="price">${product.price.toFixed(2)}</p>
+            <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
