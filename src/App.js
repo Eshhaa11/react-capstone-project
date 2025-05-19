@@ -3,7 +3,8 @@ import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import Checkout from "./Pages/Checkout";
 import Cart from "./Pages/Cart";
-import Navbar from "./Components/Navbar";
+import ProductDetail from "./Pages/ProductDetail";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Products />
       <Checkout />
       <Cart />
+      <ProductDetail />
     </div>
   );
 }
