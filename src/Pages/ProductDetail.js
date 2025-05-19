@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import products from '../data/productData';
-import { CartContext } from '../context/CartContext';
-import '../styles/ProductDetail.css';
-
+import products from '../data/productdata';
+import { CartContext } from '../Context/CartContext';
+import '../Styles/ProductDetail.css';
 const ProductDetail = () => {
   const { id } = useParams();
   const { addToCart } = useContext(CartContext);
