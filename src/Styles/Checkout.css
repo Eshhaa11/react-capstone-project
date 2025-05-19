@@ -1,0 +1,30 @@
+.checkout-container {
+  padding: 2rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.checkout-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.checkout-form button {
+  padding: 0.7rem;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.order-summary {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
