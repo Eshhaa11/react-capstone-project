@@ -4,10 +4,13 @@ import '../Styles/Home.css';
 const Home = () => {
   return (
     <div className="home-container">
-      <h1>Welcome to Shophoria 🛍️</h1>
-     <p>Find it. Love it. Get it.</p>
-    <a href="/products">Start Shopping</a>
-
+      <div className="overlay">
+        <div className="hero-content">
+          <h1>Welcome to Shophoria 🛒</h1>
+          <p></p>
+          <a href="/products">Shop Now</a>
+        </div>
+      </div>
     </div>
   );
 };
