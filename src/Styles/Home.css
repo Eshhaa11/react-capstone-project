@@ -1,29 +1,46 @@
 .home-container {
-  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fce3ec, #ffe8cc);
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
+  color: #2d3436;
 }
 
 .home-container h1 {
-  font-size: 20px;
-  color: #273848;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2d3436;
+  letter-spacing: 1px;
 }
 
 .home-container p {
-  font-size: 19.2px; 
-  margin: 30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  color: #636e72;
 }
 
 .home-container a {
-  text-decoration: none;
-  padding: 9.6px 19.2px; 
+  display: inline-block;
+  padding: 14px 28px;
   background-color: #6c5ce7;
   color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(108, 92, 231, 0.3);
 }
 
 .home-container a:hover {
   background-color: #5a4de3;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(90, 77, 227, 0.4);
 }
