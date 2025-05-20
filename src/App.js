@@ -6,18 +6,20 @@ import Products from "./Pages/Products";
 import Cart from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
 import ProductDetail from "./Pages/ProductDetail";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/navbar";
+
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} /> 
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="*" element={<h2 style={{ padding: "2rem" }}>Page not found</h2>} />
       </Routes>
     </Router>
   );
