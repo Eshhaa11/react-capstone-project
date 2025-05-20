@@ -27,7 +27,13 @@ const Products = () => {
     <div className="products-page">
       <h2>Shop by Category</h2>
 
-     
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={searchTerm}
+        onChange={e => setSearchTerm(e.target.value)}
+        className="search-bar"
+      />
 
       <div className="category-buttons">
         <button onClick={() => setSelectedCategory('All')} className={selectedCategory === 'All' ? 'active' : ''}>All</button>
@@ -44,17 +50,22 @@ const Products = () => {
 
       {alertMessage && <div className="cart-alert">{alertMessage}</div>}
 
-      <div className="product-grid">
-        {filteredProducts.map(product => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.title} />
-            <h4>{product.title}</h4>
-            <p>{product.description}</p>
-            <p className="price">${product.price.toFixed(2)}</p>
-            <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
-          </div>
-        ))}
-      </div>
+      {filteredProducts.length > 0 ? (
+        <div className="product-grid">
+          {filteredProducts.map(product => (
+            <div key={product.id} className="product-card">
+              <img src={product.image} alt={product.title} />
+              <h4>{product.title}</h4>
+              <p className="price">${product.price.toFixed(2)}</p>
+              <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="no-results">
+          😔 Sorry, we don't have any products matching "<strong>{searchTerm}</strong>" right now.
+        </div>
+      )}
     </div>
   );
 };
