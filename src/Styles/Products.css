@@ -10,6 +10,21 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #009688;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #00796B;
+}
 
 .category-buttons {
   display: flex;
@@ -39,6 +54,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .product-card {
@@ -49,6 +65,10 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .product-card:hover {
@@ -59,27 +79,32 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 6px;
+  margin-bottom: 0.8rem;
 }
 
 .product-card h4 {
   color: #2C3E50;
   margin: 0.5rem 0;
+  font-weight: 600;
 }
 
 .price {
   color: #FF6F61;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .product-card button {
   background-color: #009688;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: 600;
   transition: background 0.3s;
+  width: 100%;
 }
 
 .product-card button:hover {
@@ -94,6 +119,13 @@ h2 {
   margin-bottom: 1rem;
   font-weight: bold;
   animation: fadeOut 2s ease forwards;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #999;
 }
 
 @keyframes fadeOut {
