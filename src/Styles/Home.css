@@ -1,15 +1,19 @@
 .home-container {
-  min-height: 100vh;
+  height: 100vh;
+  background-image: url('../Assets/Cart.jpg'); /* Adjust path based on your file structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #fce3ec, #ffe8cc);
   text-align: center;
+  color: white;
+  padding: 30px;
   font-family: 'Segoe UI', sans-serif;
-  padding: 40px;
-  color: #2d3436;
 }
+
 
 .home-container h1 {
   font-size: 48px;
