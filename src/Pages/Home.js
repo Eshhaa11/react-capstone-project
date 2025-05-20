@@ -5,8 +5,9 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1>Welcome to Shophoria 🛍️</h1>
-      <p>Your one-stop shop for everything you need </p>
-      <a href="/products">Start Shopping</a>
+     <p>Find it. Love it. Get it.</p>
+    <a href="/products">Start Shopping</a>
+
     </div>
   );
 };
