@@ -1,50 +1,15 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; /* no scrolling anywhere */
+}
+
 .home-container {
   height: 100vh;
-  background-image: url('../Assets/Cart.jpg'); /* Adjust path based on your file structure */
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  background-image: url('../Assets/Cart.jpg');
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 30px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-.home-container h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #2d3436;
-  letter-spacing: 1px;
-}
-
-.home-container p {
-  font-size: 20px;
-  margin-bottom: 40px;
-  max-width: 600px;
-  color: #636e72;
-}
-
-.home-container a {
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: #6c5ce7;
-  color: white;
-  font-size: 18px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 15px rgba(108, 92, 231, 0.3);
-}
-
-.home-container a:hover {
-  background-color: #5a4de3;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 20px rgba(90, 77, 227, 0.4);
+  background-position: center center;
+  background-size: contain; /* <-- show entire image */
+  overflow: hidden;
 }
