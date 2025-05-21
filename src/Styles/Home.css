@@ -1,8 +1,4 @@
-html, body, #root {
-  margin: 0;
-  height: 100%;
-  overflow: hidden; /* no scrolling anywhere */
-}
+
 
 .home-container {
   height: 100vh;
@@ -10,6 +6,6 @@ html, body, #root {
   background-image: url('../Assets/Cart.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain; /* <-- show entire image */
+  background-size: contain; 
   overflow: hidden;
 }
