@@ -439,7 +439,7 @@ const products = [
     title: "Kids' Sweatpants",
     price: 24.99,
     description: "Comfortable sweatpants.",
-    image: 
+    image:  Image52
   },
   {
     id: 53,
