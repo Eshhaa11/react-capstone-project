@@ -12,7 +12,7 @@ const ProductDetail = () => {
  
   const product = products.find(p => p.id === parseInt(id));
 
-  // Handle invalid ID
+  
   if (!product) return <p style={{ padding: '2rem' }}>Product not found.</p>;
 
   return (
