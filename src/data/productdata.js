@@ -33,7 +33,7 @@ import Image32 from '../Assets/Image32.jpg';
 import Image33 from '../Assets/Image33.jpg';
 import Image34 from '../Assets/Image34.jpg';
 import Image35 from '../Assets/Image35.jpg';
-import Image20 from '../Assets/Image20.jpg';
+import Image36 from '../Assets/Image36.jpg';
 import Image20 from '../Assets/Image20.jpg';
 import Image20 from '../Assets/Image20.jpg';
 import Image20 from '../Assets/Image20.jpg';
