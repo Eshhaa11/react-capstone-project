@@ -1,5 +1,6 @@
 import Image1 from '../Assets/Image1.jpg';
 import Image2 from '../Assets/Image2.jpg';
+import Image3 from '../Assets/Image3.jpg';
 
 const products = [
   // MEN
