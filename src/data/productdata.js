@@ -391,7 +391,7 @@ const products = [
     title: "Kids' Hoodie",
     price: 29.99,
     description: "Soft and warm kids' hoodie.",
-    image: 41
+    image: Image41
   },
   {
     id: 42,
