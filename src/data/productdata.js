@@ -237,7 +237,7 @@ const products = [
     title: "Women's T-Shirt",
     price: 19.99,
     description: "Casual cotton T-shirt.",
-    image:
+    image:  Image27
   },
   {
     id: 28,
