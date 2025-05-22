@@ -171,7 +171,7 @@ const products = [
     title: "Men's Dress Shirt",
     price: 39.99,
     description: "Formal dress shirt.",
-    image: "https://via.placeholder.com/200x150?text=Dress+Shirt"
+    image: Image19
   },
   {
     id: 20,
