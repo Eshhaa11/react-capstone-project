@@ -57,7 +57,7 @@ const products = [
     title: "Men's Sweatshirt",
     price: 34.99,
     description: "Cozy cotton sweatshirt.",
-    image:
+    image: Image6
   },
   {
     id: 7,
