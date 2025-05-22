@@ -123,7 +123,7 @@ const products = [
     title: "Men's Button-Down Shirt",
     price: 29.99,
     description: "Classic button-down shirt.",
-    image: "https://via.placeholder.com/200x150?text=Button-Down+Shirt"
+    image: Image13
   },
   {
     id: 14,
