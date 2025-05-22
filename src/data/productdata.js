@@ -407,7 +407,7 @@ const products = [
     title: "Kids' Pajamas",
     price: 19.99,
     description: "Soft cotton pajamas.",
-    image: 
+    image:  Image48
   },
   {
     id: 49,
