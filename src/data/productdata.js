@@ -341,7 +341,7 @@ const products = [
     title: "Women's Sweater",
     price: 39.99,
     description: "Warm knit sweater.",
-    image: 
+    image: Image40
   },
 
   // KIDS
