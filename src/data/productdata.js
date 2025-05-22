@@ -197,7 +197,7 @@ const products = [
     title: "Women's Blouse",
     price: 29.99,
     description: "Elegant and stylish blouse.",
-    image: "https://via.placeholder.com/200x150?text=Blouse"
+    image: Image22
   },
   {
     id: 23,
