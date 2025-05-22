@@ -81,7 +81,7 @@ const products = [
     title: "Men's Hoodie",
     price: 39.99,
     description: "Warm fleece hoodie.",
-    image:
+    image: Image9
   },
   {
     id: 10,
