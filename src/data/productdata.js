@@ -447,7 +447,7 @@ const products = [
     title: "Kids' Cap",
     price: 9.99,
     description: "Fun kids' cap.",
-    image:
+    image:  Image53
   },
   {
     id: 54,
