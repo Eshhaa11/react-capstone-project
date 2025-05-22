@@ -293,7 +293,7 @@ const products = [
     title: "Women's Coat",
     price: 99.99,
     description: "Warm winter coat.",
-    image:
+    image:  Image34
   },
   {
     id: 35,
