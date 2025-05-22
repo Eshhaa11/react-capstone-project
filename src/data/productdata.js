@@ -1,6 +1,13 @@
 import Image1 from '../Assets/Image1.jpg';
 import Image2 from '../Assets/Image2.jpg';
 import Image3 from '../Assets/Image3.jpg';
+import Image4 from '../Assets/Image4.jpg';
+import Image1 from '../Assets/Image1.jpg';
+import Image1 from '../Assets/Image1.jpg';
+import Image1 from '../Assets/Image1.jpg';
+import Image1 from '../Assets/Image1.jpg';
+import Image1 from '../Assets/Image1.jpg';
+import Image1 from '../Assets/Image1.jpg';
 
 const products = [
   // MEN
