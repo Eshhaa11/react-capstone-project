@@ -65,7 +65,7 @@ const products = [
     title: "Men's Tank Top",
     price: 14.99,
     description: "Lightweight summer tank top.",
-    image:
+    image: Image7
   },
   {
     id: 8,
