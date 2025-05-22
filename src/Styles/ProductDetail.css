@@ -1,52 +1,118 @@
+/* ProductDetail.css */
+
 .detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: #FAFAFA;
-  font-family: 'Segoe UI', sans-serif;
+  gap: 40px;
+  background-color: #F4F1EE; /* Light neutral background */
+  border-radius: 12px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #3C2F2F;
+  box-shadow: 0 8px 16px rgba(60, 47, 47, 0.1);
 }
 
 .detail-image {
-  width: 300px;
-  border-radius: 10px;
+  flex: 1;
+  max-width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #D1BFA9;
+  box-shadow: 0 4px 8px rgba(60, 47, 47, 0.1);
 }
 
 .detail-info {
-  max-width: 500px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .detail-info h2 {
-  color: #009688;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .detail-price {
-  color: #FF6F61;
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  color: #8A7F71; /* Muted brown */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.detail-info p {
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #4B3832;
 }
 
 .detail-info button {
-  background-color: #009688;
+  background-color: #1C1C1C;
   color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 14px 24px;
   border-radius: 8px;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
 }
 
-@media (max-width: 768px) {
+.detail-info button:hover {
+  background-color: #000000;
+}
+
+.detail-info a {
+  margin-top: 24px;
+  color: #8A7F71;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.detail-info a:hover {
+  color: #3C2F2F;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
   .detail-container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 20px;
+    max-width: 90%;
   }
 
   .detail-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .detail-info button {
     width: 100%;
-    max-width: 300px;
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .detail-price {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  .detail-info p {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
   }
 }
