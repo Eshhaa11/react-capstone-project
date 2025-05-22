@@ -1,3 +1,5 @@
+import Image1 from '../Assets/Image1.jpg';
+
 const products = [
   // MEN
   {
@@ -6,7 +8,7 @@ const products = [
     title: "Men's Leather Jacket",
     price: 79.99,
     description: "Stylish and durable leather jacket.",
-    image: "https://via.placeholder.com/200x150?text=Leather+Jacket"
+    image: Image1
   },
   {
     id: 2,
