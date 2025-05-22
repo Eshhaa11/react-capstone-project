@@ -455,7 +455,7 @@ const products = [
     title: "Kids' Sneakers",
     price: 39.99,
     description: "Durable kids' sneakers.",
-    image: 
+    image:  Image54
   },
   {
     id: 55,
