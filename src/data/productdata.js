@@ -47,7 +47,7 @@ import Image46 from '../Assets/Image46.jpg';
 import Image47 from '../Assets/Image47.jpg';
 import Image48 from '../Assets/Image48.jpg';
 import Image49 from '../Assets/Image49.jpg';
-import Image20 from '../Assets/Image20.jpg';
+import Image50 from '../Assets/Image50.jpg';
 import Image20 from '../Assets/Image20.jpg';
 import Image20 from '../Assets/Image20.jpg';
 import Image20 from '../Assets/Image20.jpg';
