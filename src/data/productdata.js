@@ -147,7 +147,7 @@ const products = [
     title: "Men's Flannel Shirt",
     price: 34.99,
     description: "Warm and soft flannel shirt.",
-    image: "https://via.placeholder.com/200x150?text=Flannel+Shirt"
+    image: Image16
   },
   {
     id: 17,
