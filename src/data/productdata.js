@@ -261,7 +261,7 @@ const products = [
     title: "Women's Wrap Dress",
     price: 44.99,
     description: "Elegant wrap dress.",
-    image: 
+    image:  Image30
   },
   {
     id: 31,
