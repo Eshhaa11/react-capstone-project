@@ -179,7 +179,7 @@ const products = [
     title: "Men's Winter Jacket",
     price: 99.99,
     description: "Insulated winter jacket.",
-    image: "https://via.placeholder.com/200x150?text=Winter+Jacket"
+    image: Image20
   },
 
   // WOMEN
