@@ -277,7 +277,7 @@ const products = [
     title: "Women's Sweatpants",
     price: 29.99,
     description: "Cozy sweatpants.",
-    image: 
+    image:  Image32
   },
   {
     id: 33,
