@@ -205,7 +205,7 @@ const products = [
     title: "Women's Skinny Jeans",
     price: 49.99,
     description: "Classic skinny jeans.",
-    image: "https://via.placeholder.com/200x150?text=Skinny+Jeans"
+    image:
   },
   {
     id: 24,
@@ -213,7 +213,7 @@ const products = [
     title: "Women's Cardigan",
     price: 34.99,
     description: "Soft knitted cardigan.",
-    image: "https://via.placeholder.com/200x150?text=Cardigan"
+    image:
   },
   {
     id: 25,
@@ -221,7 +221,7 @@ const products = [
     title: "Women's Maxi Dress",
     price: 59.99,
     description: "Flowy maxi dress for special occasions.",
-    image: "https://via.placeholder.com/200x150?text=Maxi+Dress"
+    image:
   },
   {
     id: 26,
@@ -229,7 +229,7 @@ const products = [
     title: "Women's Denim Jacket",
     price: 49.99,
     description: "Classic denim jacket.",
-    image: "https://via.placeholder.com/200x150?text=Denim+Jacket"
+    image: 
   },
   {
     id: 27,
@@ -237,7 +237,7 @@ const products = [
     title: "Women's T-Shirt",
     price: 19.99,
     description: "Casual cotton T-shirt.",
-    image: "https://via.placeholder.com/200x150?text=T-Shirt"
+    image:
   },
   {
     id: 28,
@@ -245,7 +245,7 @@ const products = [
     title: "Women's Leggings",
     price: 24.99,
     description: "Comfortable stretch leggings.",
-    image: "https://via.placeholder.com/200x150?text=Leggings"
+    image:
   },
   {
     id: 29,
@@ -253,7 +253,7 @@ const products = [
     title: "Women's Hoodie",
     price: 39.99,
     description: "Soft fleece hoodie.",
-    image: "https://via.placeholder.com/200x150?text=Hoodie"
+    image: 
   },
   {
     id: 30,
@@ -261,7 +261,7 @@ const products = [
     title: "Women's Wrap Dress",
     price: 44.99,
     description: "Elegant wrap dress.",
-    image: "https://via.placeholder.com/200x150?text=Wrap+Dress"
+    image: 
   },
   {
     id: 31,
@@ -269,7 +269,7 @@ const products = [
     title: "Women's Shorts",
     price: 24.99,
     description: "Casual cotton shorts.",
-    image: "https://via.placeholder.com/200x150?text=Shorts"
+    image: 
   },
   {
     id: 32,
@@ -277,7 +277,7 @@ const products = [
     title: "Women's Sweatpants",
     price: 29.99,
     description: "Cozy sweatpants.",
-    image: "https://via.placeholder.com/200x150?text=Sweatpants"
+    image: 
   },
   {
     id: 33,
@@ -285,7 +285,7 @@ const products = [
     title: "Women's Tank Top",
     price: 14.99,
     description: "Light summer tank top.",
-    image: "https://via.placeholder.com/200x150?text=Tank+Top"
+    image: 
   },
   {
     id: 34,
@@ -293,7 +293,7 @@ const products = [
     title: "Women's Coat",
     price: 99.99,
     description: "Warm winter coat.",
-    image: "https://via.placeholder.com/200x150?text=Coat"
+    image:
   },
   {
     id: 35,
@@ -301,7 +301,7 @@ const products = [
     title: "Women's Midi Skirt",
     price: 34.99,
     description: "Elegant midi skirt.",
-    image: "https://via.placeholder.com/200x150?text=Midi+Skirt"
+    image: 
   },
   {
     id: 36,
@@ -309,7 +309,7 @@ const products = [
     title: "Women's Formal Blazer",
     price: 69.99,
     description: "Tailored formal blazer.",
-    image: "https://via.placeholder.com/200x150?text=Blazer"
+    image: 
   },
   {
     id: 37,
@@ -317,7 +317,7 @@ const products = [
     title: "Women's Graphic Tee",
     price: 19.99,
     description: "Trendy graphic T-shirt.",
-    image: "https://via.placeholder.com/200x150?text=Graphic+Tee"
+    image:
   },
   {
     id: 38,
@@ -325,7 +325,7 @@ const products = [
     title: "Women's Jeans Jacket",
     price: 49.99,
     description: "Casual jeans jacket.",
-    image: "https://via.placeholder.com/200x150?text=Jeans+Jacket"
+    image:
   },
   {
     id: 39,
@@ -333,7 +333,7 @@ const products = [
     title: "Women's Crop Top",
     price: 19.99,
     description: "Stylish crop top.",
-    image: "https://via.placeholder.com/200x150?text=Crop+Top"
+    image: 
   },
   {
     id: 40,
@@ -341,7 +341,7 @@ const products = [
     title: "Women's Sweater",
     price: 39.99,
     description: "Warm knit sweater.",
-    image: "https://via.placeholder.com/200x150?text=Sweater"
+    image: 
   },
 
   // KIDS
@@ -351,7 +351,7 @@ const products = [
     title: "Kids' Hoodie",
     price: 29.99,
     description: "Soft and warm kids' hoodie.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Hoodie"
+    image: 
   },
   {
     id: 42,
@@ -359,7 +359,7 @@ const products = [
     title: "Kids' T-Shirt",
     price: 14.99,
     description: "Bright and fun kids' T-shirt.",
-    image: "https://via.placeholder.com/200x150?text=Kids+T-Shirt"
+    image:
   },
   {
     id: 43,
@@ -367,7 +367,7 @@ const products = [
     title: "Kids' Jeans",
     price: 29.99,
     description: "Durable kids' jeans.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Jeans"
+    image: 
   },
   {
     id: 44,
@@ -375,7 +375,7 @@ const products = [
     title: "Kids' Shorts",
     price: 19.99,
     description: "Comfortable kids' shorts.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Shorts"
+    image:
   },
   {
     id: 45,
@@ -383,7 +383,7 @@ const products = [
     title: "Kids' Sweater",
     price: 24.99,
     description: "Warm kids' sweater.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Sweater"
+    image: 
   },
   {
     id: 46,
@@ -391,7 +391,7 @@ const products = [
     title: "Kids' Jacket",
     price: 49.99,
     description: "Water-resistant kids' jacket.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Jacket"
+    image:
   },
   {
     id: 47,
@@ -399,7 +399,7 @@ const products = [
     title: "Kids' Dress",
     price: 34.99,
     description: "Cute kids' dress.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Dress"
+    image: 
   },
   {
     id: 48,
@@ -407,7 +407,7 @@ const products = [
     title: "Kids' Pajamas",
     price: 19.99,
     description: "Soft cotton pajamas.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Pajamas"
+    image: 
   },
   {
     id: 49,
@@ -415,7 +415,7 @@ const products = [
     title: "Kids' Tank Top",
     price: 14.99,
     description: "Lightweight tank top.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Tank+Top"
+    image: 
   },
   {
     id: 50,
@@ -423,7 +423,7 @@ const products = [
     title: "Kids' Raincoat",
     price: 29.99,
     description: "Bright and waterproof raincoat.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Raincoat"
+    image: 
   },
   {
     id: 51,
@@ -431,7 +431,7 @@ const products = [
     title: "Kids' Hoodie Jacket",
     price: 34.99,
     description: "Warm hoodie jacket.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Hoodie+Jacket"
+    image:
   },
   {
     id: 52,
@@ -439,7 +439,7 @@ const products = [
     title: "Kids' Sweatpants",
     price: 24.99,
     description: "Comfortable sweatpants.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Sweatpants"
+    image: 
   },
   {
     id: 53,
@@ -447,7 +447,7 @@ const products = [
     title: "Kids' Cap",
     price: 9.99,
     description: "Fun kids' cap.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Cap"
+    image:
   },
   {
     id: 54,
@@ -455,7 +455,7 @@ const products = [
     title: "Kids' Sneakers",
     price: 39.99,
     description: "Durable kids' sneakers.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Sneakers"
+    image: 
   },
   {
     id: 55,
@@ -463,7 +463,7 @@ const products = [
     title: "Kids' Gloves",
     price: 9.99,
     description: "Warm gloves for kids.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Gloves"
+    image: 
   },
   {
     id: 56,
@@ -471,7 +471,7 @@ const products = [
     title: "Kids' Scarf",
     price: 14.99,
     description: "Colorful scarf.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Scarf"
+    image: 
   },
   {
     id: 57,
@@ -479,7 +479,7 @@ const products = [
     title: "Kids' Winter Coat",
     price: 69.99,
     description: "Insulated winter coat.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Winter+Coat"
+    image: 
   },
   {
     id: 58,
@@ -487,7 +487,7 @@ const products = [
     title: "Kids' Snow Pants",
     price: 49.99,
     description: "Waterproof snow pants.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Snow+Pants"
+    image: 
   },
   {
     id: 59,
@@ -495,7 +495,7 @@ const products = [
     title: "Kids' Turtleneck",
     price: 19.99,
     description: "Cozy turtleneck sweater.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Turtleneck"
+    image: 
   },
   {
     id: 60,
@@ -503,7 +503,7 @@ const products = [
     title: "Kids' Overalls",
     price: 39.99,
     description: "Durable overalls for playtime.",
-    image: "https://via.placeholder.com/200x150?text=Kids+Overalls"
+    image: Image60
   }
 ];
 
