@@ -479,7 +479,7 @@ const products = [
     title: "Kids' Winter Coat",
     price: 69.99,
     description: "Insulated winter coat.",
-    image: 
+    image:  Image57
   },
   {
     id: 58,
