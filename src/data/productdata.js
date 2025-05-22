@@ -269,7 +269,7 @@ const products = [
     title: "Women's Shorts",
     price: 24.99,
     description: "Casual cotton shorts.",
-    image: 
+    image:  Image31
   },
   {
     id: 32,
