@@ -317,7 +317,7 @@ const products = [
     title: "Women's Graphic Tee",
     price: 19.99,
     description: "Trendy graphic T-shirt.",
-    image:
+    image:  Image37
   },
   {
     id: 38,
