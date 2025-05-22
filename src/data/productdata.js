@@ -333,7 +333,7 @@ const products = [
     title: "Women's Crop Top",
     price: 19.99,
     description: "Stylish crop top.",
-    image: 
+    image:  Image39
   },
   {
     id: 40,
