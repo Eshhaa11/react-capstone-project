@@ -189,7 +189,7 @@ const products = [
     title: "Women's Summer Dress",
     price: 39.99,
     description: "Light and breezy summer dress.",
-    image: "https://via.placeholder.com/200x150?text=Summer+Dress"
+    image: Image21
   },
   {
     id: 22,
