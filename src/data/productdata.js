@@ -11,7 +11,7 @@ import Image10 from '../Assets/Image10.jpg';
 import Image11 from '../Assets/Image11.jpg';
 import Image12 from '../Assets/Image12.jpg';
 import Image13 from '../Assets/Image13.jpg';
-import Image10 from '../Assets/Image10.jpg';
+import Image14 from '../Assets/Image14.jpg';
 import Image10 from '../Assets/Image10.jpg';
 import Image10 from '../Assets/Image10.jpg';
 import Image10 from '../Assets/Image10.jpg';
