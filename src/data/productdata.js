@@ -301,7 +301,7 @@ const products = [
     title: "Women's Midi Skirt",
     price: 34.99,
     description: "Elegant midi skirt.",
-    image: 
+    image:  Image35
   },
   {
     id: 36,
