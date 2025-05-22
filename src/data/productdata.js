@@ -213,7 +213,7 @@ const products = [
     title: "Women's Cardigan",
     price: 34.99,
     description: "Soft knitted cardigan.",
-    image:
+    image:  Image24
   },
   {
     id: 25,
