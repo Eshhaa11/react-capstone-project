@@ -107,7 +107,7 @@ const products = [
     title: "Men's Windbreaker Jacket",
     price: 59.99,
     description: "Lightweight windbreaker for outdoors.",
-    image: "https://via.placeholder.com/200x150?text=Windbreaker"
+    image: Image11
   },
   {
     id: 12,
