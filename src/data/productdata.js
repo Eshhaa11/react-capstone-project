@@ -221,7 +221,7 @@ const products = [
     title: "Women's Maxi Dress",
     price: 59.99,
     description: "Flowy maxi dress for special occasions.",
-    image:
+    image:  Image25
   },
   {
     id: 26,
