@@ -415,7 +415,7 @@ const products = [
     title: "Kids' Tank Top",
     price: 14.99,
     description: "Lightweight tank top.",
-    image: 
+    image:  Image49
   },
   {
     id: 50,
