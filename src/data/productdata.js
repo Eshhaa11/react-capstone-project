@@ -391,7 +391,7 @@ const products = [
     title: "Kids' Jacket",
     price: 49.99,
     description: "Water-resistant kids' jacket.",
-    image:
+    image:  Image46
   },
   {
     id: 47,
