@@ -325,7 +325,7 @@ const products = [
     title: "Women's Jeans Jacket",
     price: 49.99,
     description: "Casual jeans jacket.",
-    image:
+    image:  Image38
   },
   {
     id: 39,
