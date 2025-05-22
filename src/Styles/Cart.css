@@ -1,147 +1,197 @@
+/* Cart.css */
 
 .cart-wrapper {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 24px;
-  background-color: #F4F1EE;
-  border-radius: 12px;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  color: #3C2F2F;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a3a3a;
 }
 
 .cart-title {
-  font-size: 2rem;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.empty-cart {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #6A6A6A;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #6a4a3c;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #d7c4b8;
+  padding-bottom: 0.6rem;
 }
 
 .cart-items {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.8rem;
 }
-
 
 .cart-item {
   display: flex;
-  gap: 20px;
-  padding: 20px;
-  background-color: #FFFFFF;
-  border: 1px solid #D1BFA9;
-  border-radius: 10px;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 1.8rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #f1e9e5;
 }
 
 .item-image {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid #CCCCCC;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(106, 74, 60, 0.12);
+  flex-shrink: 0;
 }
 
 .item-details {
-  flex: 1;
-  min-width: 200px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #5a3e36;
 }
 
 .item-price {
-  font-size: 0.95rem;
-  color: #5A5A5A;
-  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #8c5c3d;
+  margin-bottom: 1rem;
 }
 
-.item-quantity {
-  width: 60px;
-  padding: 6px;
-  border: 1px solid #CCCCCC;
-  border-radius: 4px;
-  margin-right: 14px;
-  font-size: 0.95rem;
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
 }
 
-.remove-button {
-  background-color: #1C1C1C;
-  color: #FFFFFF;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.remove-button:hover {
-  background-color: #000000;
-}
-
-/* Total section */
-.cart-total {
-  margin-top: 32px;
-  text-align: right;
-  font-size: 1.4rem;
+.qty-label {
+  font-size: 1rem;
   font-weight: 600;
-  color: #3C2F2F;
+  color: #7a5e4e;
 }
 
+.qty-input {
+  width: 60px;
+  padding: 6px 10px;
+  font-size: 1.1rem;
+  border: 1.5px solid #cbb6a1;
+  border-radius: 8px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
 
+.qty-input:focus {
+  border-color: #a1765a;
+  box-shadow: 0 0 6px #bca98a;
+}
+
+.remove-btn {
+  align-self: flex-start;
+  padding: 8px 14px;
+  background-color: #d9b99b;
+  border: none;
+  border-radius: 10px;
+  color: #654a38;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  width: fit-content;
+}
+
+.remove-btn:hover,
+.remove-btn:focus {
+  background-color: #b89477;
+  outline: none;
+}
+
+.cart-footer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 1rem;
+  border-top: 2px solid #d7c4b8;
+  padding-top: 1.2rem;
+}
+
+.total-label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6a4a3c;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.total-amount {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #8c5c3d;
+}
+
+/* Empty cart state */
+.cart-empty {
+  max-width: 500px;
+  margin: 6rem auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #7a5e4e;
+}
+
+.cart-empty h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cart-empty p {
+  font-size: 1.25rem;
+  color: #a18d7f;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .cart-wrapper {
-    padding: 16px;
-  }
-
-  .cart-title {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
   .cart-item {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .item-image {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
+    align-items: center;
+    text-align: center;
   }
 
   .item-details {
-    width: 100%;
+    align-items: center;
   }
 
-  .cart-total {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 24px;
-  }
-
-  .remove-button {
-    margin-top: 8px;
+  .cart-footer {
+    justify-content: center;
+    gap: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .item-quantity {
-    width: 100%;
-    margin: 8px 0;
+  .cart-wrapper {
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
   }
 
-  .remove-button {
-    width: 100%;
+  .cart-title {
+    font-size: 2rem;
+  }
+
+  .total-label {
+    font-size: 1.4rem;
+  }
+
+  .total-amount {
+    font-size: 1.6rem;
+  }
+
+  .qty-input {
+    width: 50px;
   }
 }
