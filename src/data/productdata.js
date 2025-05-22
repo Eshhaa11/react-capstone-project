@@ -431,7 +431,7 @@ const products = [
     title: "Kids' Hoodie Jacket",
     price: 34.99,
     description: "Warm hoodie jacket.",
-    image:
+    image:  Image51
   },
   {
     id: 52,
