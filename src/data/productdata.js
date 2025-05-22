@@ -163,7 +163,7 @@ const products = [
     title: "Men's Sweatpants",
     price: 29.99,
     description: "Relaxed fit sweatpants.",
-    image: "https://via.placeholder.com/200x150?text=Sweatpants"
+    image: Image18
   },
   {
     id: 19,
