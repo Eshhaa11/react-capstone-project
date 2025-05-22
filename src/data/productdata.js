@@ -73,7 +73,7 @@ const products = [
     title: "Men's Formal Suit",
     price: 149.99,
     description: "Elegant two-piece formal suit.",
-    image: 
+    image: Image8
   },
   {
     id: 9,
