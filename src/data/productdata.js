@@ -463,7 +463,7 @@ const products = [
     title: "Kids' Gloves",
     price: 9.99,
     description: "Warm gloves for kids.",
-    image: 
+    image:  Image55
   },
   {
     id: 56,
