@@ -33,7 +33,7 @@ const products = [
     title: "Men's Denim Jeans",
     price: 49.99,
     description: "Classic fit denim jeans.",
-    image: "https://via.placeholder.com/200x150?text=Denim+Jeans"
+    image: Image3
   },
   {
     id: 4,
