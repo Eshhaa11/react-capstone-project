@@ -471,7 +471,7 @@ const products = [
     title: "Kids' Scarf",
     price: 14.99,
     description: "Colorful scarf.",
-    image: 
+    image:  Image56
   },
   {
     id: 57,
