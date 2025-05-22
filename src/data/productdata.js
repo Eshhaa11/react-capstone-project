@@ -309,7 +309,7 @@ const products = [
     title: "Women's Formal Blazer",
     price: 69.99,
     description: "Tailored formal blazer.",
-    image: 
+    image:  Image36 
   },
   {
     id: 37,
