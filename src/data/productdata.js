@@ -8,7 +8,7 @@ import Image7 from '../Assets/Image7.jpg';
 import Image8 from '../Assets/Image8.jpg';
 import Image9 from '../Assets/Image9.jpg';
 import Image10 from '../Assets/Image10.jpg';
-import Image10 from '../Assets/Image10.jpg';
+import Image11 from '../Assets/Image11.jpg';
 import Image10 from '../Assets/Image10.jpg';
 import Image10 from '../Assets/Image10.jpg';
 import Image10 from '../Assets/Image10.jpg';
