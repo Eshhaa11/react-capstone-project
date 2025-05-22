@@ -18,7 +18,7 @@ import Image17 from '../Assets/Image17.jpg';
 import Image18 from '../Assets/Image18.jpg';
 import Image19 from '../Assets/Image19.jpg';
 import Image20 from '../Assets/Image20.jpg';
-import Image20 from '../Assets/Image20.jpg';
+import Image21 from '../Assets/Image21.jpg';
 import Image20 from '../Assets/Image20.jpg';
 import Image20 from '../Assets/Image20.jpg';
 import Image20 from '../Assets/Image20.jpg';
