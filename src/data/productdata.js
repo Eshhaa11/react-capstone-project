@@ -115,7 +115,7 @@ const products = [
     title: "Men's Graphic Tee",
     price: 19.99,
     description: "Trendy graphic print T-shirt.",
-    image: "https://via.placeholder.com/200x150?text=Graphic+Tee"
+    image: Image12
   },
   {
     id: 13,
