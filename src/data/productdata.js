@@ -285,7 +285,7 @@ const products = [
     title: "Women's Tank Top",
     price: 14.99,
     description: "Light summer tank top.",
-    image: 
+    image:  Image33
   },
   {
     id: 34,
