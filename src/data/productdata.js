@@ -49,7 +49,7 @@ const products = [
     title: "Men's Chino Pants",
     price: 39.99,
     description: "Slim fit chino pants.",
-    image: 
+    image: Image5
   },
   {
     id: 6,
