@@ -3,11 +3,13 @@ import { useParams } from 'react-router-dom';
 import products from '../data/productdata';
 import { CartContext } from '../Context/CartContext';
 import '../Styles/ProductDetail.css';
+
+
 const ProductDetail = () => {
   const { id } = useParams();
   const { addToCart } = useContext(CartContext);
 
-  // Convert id to number and find the matching product
+ 
   const product = products.find(p => p.id === parseInt(id));
 
   // Handle invalid ID
