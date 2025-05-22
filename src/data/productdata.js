@@ -16,7 +16,7 @@ import Image15 from '../Assets/Image15.jpg';
 import Image16 from '../Assets/Image16.jpg';
 import Image17 from '../Assets/Image17.jpg';
 import Image18 from '../Assets/Image18.jpg';
-import Image10 from '../Assets/Image10.jpg';
+import Image19 from '../Assets/Image19.jpg';
 import Image10 from '../Assets/Image10.jpg';
 
 const products = [
