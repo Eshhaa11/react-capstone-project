@@ -49,7 +49,7 @@ const products = [
     title: "Men's Chino Pants",
     price: 39.99,
     description: "Slim fit chino pants.",
-    image: "https://via.placeholder.com/200x150?text=Chino+Pants"
+    image: 
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const products = [
     title: "Men's Sweatshirt",
     price: 34.99,
     description: "Cozy cotton sweatshirt.",
-    image: "https://via.placeholder.com/200x150?text=Sweatshirt"
+    image:
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ const products = [
     title: "Men's Tank Top",
     price: 14.99,
     description: "Lightweight summer tank top.",
-    image: "https://via.placeholder.com/200x150?text=Tank+Top"
+    image:
   },
   {
     id: 8,
@@ -73,7 +73,7 @@ const products = [
     title: "Men's Formal Suit",
     price: 149.99,
     description: "Elegant two-piece formal suit.",
-    image: "https://via.placeholder.com/200x150?text=Formal+Suit"
+    image: 
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ const products = [
     title: "Men's Hoodie",
     price: 39.99,
     description: "Warm fleece hoodie.",
-    image: "https://via.placeholder.com/200x150?text=Hoodie"
+    image:
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ const products = [
     title: "Men's Shorts",
     price: 24.99,
     description: "Comfortable casual shorts.",
-    image: "https://via.placeholder.com/200x150?text=Shorts"
+    image: Image10
   },
   {
     id: 11,
