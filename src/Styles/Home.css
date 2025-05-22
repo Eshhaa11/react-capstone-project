@@ -1,11 +1,107 @@
+/* Home.css */
 
+/* Scroll enabled by default for all pages */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Disable scrolling only on Home */
+body.no-scroll-home {
+  overflow: hidden;
+}
 
 .home-container {
   height: 100vh;
-  width: 100vw;
-  background-image: url('../Assets/Cart.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain; 
-  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(107, 79, 79, 0.4); /* subtle brownish overlay */
+  z-index: 0;
+}
+
+.overlay-content {
+  position: relative;
+  max-width: 600px;
+  color: #FAFAF8;
+  text-align: center;
+  z-index: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.overlay-content h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.overlay-content p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #E6DED3;
+  letter-spacing: 0.05em;
+}
+
+.overlay-content a {
+  padding: 1rem 3rem;
+  background-color: #FAFAF8;
+  color: #6B4F4F;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 6px 12px rgba(107,79,79,0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.overlay-content a:hover,
+.overlay-content a:focus {
+  background-color: #6B4F4F;
+  color: #FAFAF8;
+  outline: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .overlay-content h1 {
+    font-size: 3rem;
+  }
+  .overlay-content p {
+    font-size: 1.25rem;
+  }
+  .overlay-content a {
+    padding: 0.8rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-content h1 {
+    font-size: 2.2rem;
+  }
+  .overlay-content p {
+    font-size: 1rem;
+  }
+  .overlay-content a {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+  }
 }
