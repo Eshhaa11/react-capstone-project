@@ -495,7 +495,7 @@ const products = [
     title: "Kids' Turtleneck",
     price: 19.99,
     description: "Cozy turtleneck sweater.",
-    image: 
+    image: Image59
   },
   {
     id: 60,
