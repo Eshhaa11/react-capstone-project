@@ -57,6 +57,7 @@ const Products = () => {
               <img src={product.image} alt={product.title} />
               <h4>{product.title}</h4>
               <p className="price">${product.price.toFixed(2)}</p>
+              <p className="description">{product.description}</p>  {/* Added description */}
               <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
             </div>
           ))}
