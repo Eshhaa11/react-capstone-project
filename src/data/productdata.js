@@ -487,7 +487,7 @@ const products = [
     title: "Kids' Snow Pants",
     price: 49.99,
     description: "Waterproof snow pants.",
-    image: 
+    image:  Image58
   },
   {
     id: 59,
