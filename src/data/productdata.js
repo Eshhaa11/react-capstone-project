@@ -131,7 +131,7 @@ const products = [
     title: "Men's Cargo Pants",
     price: 44.99,
     description: "Functional cargo pants.",
-    image: "https://via.placeholder.com/200x150?text=Cargo+Pants"
+    image: Image14
   },
   {
     id: 15,
