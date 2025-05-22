@@ -205,7 +205,7 @@ const products = [
     title: "Women's Skinny Jeans",
     price: 49.99,
     description: "Classic skinny jeans.",
-    image:
+    image:  Image23
   },
   {
     id: 24,
