@@ -155,7 +155,7 @@ const products = [
     title: "Men's Overcoat",
     price: 129.99,
     description: "Classic wool overcoat.",
-    image: "https://via.placeholder.com/200x150?text=Overcoat"
+    image: Image17
   },
   {
     id: 18,
