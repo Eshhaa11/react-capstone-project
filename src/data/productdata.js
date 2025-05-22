@@ -253,7 +253,7 @@ const products = [
     title: "Women's Hoodie",
     price: 39.99,
     description: "Soft fleece hoodie.",
-    image: 
+    image:  Image29
   },
   {
     id: 30,
