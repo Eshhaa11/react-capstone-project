@@ -245,7 +245,7 @@ const products = [
     title: "Women's Leggings",
     price: 24.99,
     description: "Comfortable stretch leggings.",
-    image:
+    image:  Image28
   },
   {
     id: 29,
