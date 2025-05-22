@@ -90,7 +90,7 @@
 
 .product-card img {
   width: 100%;
-  height: 220px; /* Set a fixed height */
+  height: 220px; 
   object-fit: contain; /* Ensures full image fits without cropping */
   border-radius: 12px;
   margin-bottom: 1rem;
