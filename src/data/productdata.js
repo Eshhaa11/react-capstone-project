@@ -139,7 +139,7 @@ const products = [
     title: "Men's Tracksuit",
     price: 69.99,
     description: "Comfortable tracksuit for sports.",
-    image: "https://via.placeholder.com/200x150?text=Tracksuit"
+    image: Image15
   },
   {
     id: 16,
