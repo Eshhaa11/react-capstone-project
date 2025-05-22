@@ -25,7 +25,7 @@ const products = [
     title: "Men's Casual Shirt",
     price: 24.99,
     description: "Comfortable cotton casual shirt.",
-    image: "https://via.placeholder.com/200x150?text=Casual+Shirt"
+    image: Image2
   },
   {
     id: 3,
