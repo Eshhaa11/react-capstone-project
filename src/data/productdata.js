@@ -41,7 +41,7 @@ const products = [
     title: "Men's Polo Shirt",
     price: 29.99,
     description: "Soft breathable polo shirt.",
-    image: "https://via.placeholder.com/200x150?text=Polo+Shirt"
+    image: Image4
   },
   {
     id: 5,
