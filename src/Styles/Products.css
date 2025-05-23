@@ -96,6 +96,7 @@
   margin-bottom: 1rem;
   background-color: #f5f5f5;
   padding: 10px;
+  cursor: pointer; /* updated cursor */
 }
 
 .product-card h4 {
@@ -162,7 +163,8 @@
   }
 }
 
-/* === Modal Feature Styles === */
+/* === Modal styles (unchanged except spacing) === */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -219,13 +221,14 @@
 .modal-details .price {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem; /* reduced margin */
   color: #6B4F4F;
 }
 
 .modal-details p {
   font-size: 0.95rem;
   color: #7B7B7B;
+  margin-top: 0;
   margin-bottom: 1.2rem;
 }
 
@@ -254,4 +257,26 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+
+.toast-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #6B4F4F;
+  color: #FAFAF8;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1100;
+}
+
+.toast-message.show {
+  opacity: 1;
+  pointer-events: auto;
 }
