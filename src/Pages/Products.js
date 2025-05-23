@@ -9,8 +9,9 @@ const Products = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
-  const [alertMessage, setAlertMessage] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null); // for modal
+  const [toastMessage, setToastMessage] = useState('');
+  const [showToast, setShowToast] = useState(false);
 
   const filteredProducts = products.filter(p => {
     const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
@@ -20,8 +21,9 @@ const Products = () => {
 
   const handleAddToCart = (product) => {
     addToCart(product);
-    setAlertMessage(`${product.title} added to cart!`);
-    setTimeout(() => setAlertMessage(''), 2000);
+    setToastMessage(`${product.title} added to cart!`);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 2000);
   };
 
   return (
@@ -49,22 +51,14 @@ const Products = () => {
         ))}
       </div>
 
-      {alertMessage && <div className="cart-alert">{alertMessage}</div>}
-
       {filteredProducts.length > 0 ? (
         <div className="product-grid">
           {filteredProducts.map(product => (
-            <div key={product.id} className="product-card">
-              <img
-                src={product.image}
-                alt={product.title}
-                onClick={() => setSelectedProduct(product)}
-                style={{ cursor: 'zoom-in' }}
-              />
+            <div key={product.id} className="product-card" onClick={() => setSelectedProduct(product)}>
+              <img src={product.image} alt={product.title} />
               <h4>{product.title}</h4>
               <p className="price">${product.price.toFixed(2)}</p>
               <p className="description">{product.description}</p>
-              <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
             </div>
           ))}
         </div>
@@ -76,7 +70,7 @@ const Products = () => {
 
       {selectedProduct && (
         <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={() => setSelectedProduct(null)}>×</button>
             <div className="modal-image">
               <img src={selectedProduct.image} alt={selectedProduct.title} />
@@ -90,6 +84,11 @@ const Products = () => {
           </div>
         </div>
       )}
+
+      {/* Toast message */}
+      <div className={`toast-message ${showToast ? 'show' : ''}`}>
+        {toastMessage}
+      </div>
     </div>
   );
 };
