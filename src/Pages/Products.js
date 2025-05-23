@@ -10,6 +10,7 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
+  const [selectedProduct, setSelectedProduct] = useState(null); // For modal
 
   const filteredProducts = products.filter(p => {
     const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
@@ -54,10 +55,15 @@ const Products = () => {
         <div className="product-grid">
           {filteredProducts.map(product => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.title} />
+              <img
+                src={product.image}
+                alt={product.title}
+                onClick={() => setSelectedProduct(product)}
+                style={{ cursor: 'pointer' }}
+              />
               <h4>{product.title}</h4>
               <p className="price">${product.price.toFixed(2)}</p>
-              <p className="description">{product.description}</p>  {/* Added description */}
+              <p className="description">{product.description}</p>
               <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
             </div>
           ))}
@@ -65,6 +71,23 @@ const Products = () => {
       ) : (
         <div className="no-results">
           😔 Sorry, we don't have any products matching "<strong>{searchTerm}</strong>" right now.
+        </div>
+      )}
+
+      {selectedProduct && (
+        <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedProduct(null)}>×</button>
+            <div className="modal-image">
+              <img src={selectedProduct.image} alt={selectedProduct.title} />
+            </div>
+            <div className="modal-details">
+              <h2>{selectedProduct.title}</h2>
+              <p className="price">${selectedProduct.price.toFixed(2)}</p>
+              <p>{selectedProduct.description}</p>
+              <button onClick={() => handleAddToCart(selectedProduct)}>Add to Cart</button>
+            </div>
+          </div>
         </div>
       )}
     </div>
