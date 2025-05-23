@@ -9,13 +9,13 @@ const Cart = () => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleRemove = (id) => {
-    // Add id to removing list to trigger CSS animation
+   
     setRemovingIds(prev => [...prev, id]);
-    // After animation delay, remove item from context/cart
+    
     setTimeout(() => {
       removeFromCart(id);
       setRemovingIds(prev => prev.filter(remId => remId !== id));
-    }, 500); // matches CSS transition duration
+    }, 500); 
   };
 
   if (cart.length === 0) {
