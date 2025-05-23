@@ -10,7 +10,7 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
-  const [selectedProduct, setSelectedProduct] = useState(null); // For modal
+  const [selectedProduct, setSelectedProduct] = useState(null); // for modal
 
   const filteredProducts = products.filter(p => {
     const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
@@ -59,7 +59,7 @@ const Products = () => {
                 src={product.image}
                 alt={product.title}
                 onClick={() => setSelectedProduct(product)}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'zoom-in' }}
               />
               <h4>{product.title}</h4>
               <p className="price">${product.price.toFixed(2)}</p>
