@@ -1,11 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { CartContext } from '../Context/CartContext';
 import '../Styles/Cart.css';
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
+  const [removingIds, setRemovingIds] = useState([]);
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  const handleRemove = (id) => {
+    // Add id to removing list to trigger CSS animation
+    setRemovingIds(prev => [...prev, id]);
+    // After animation delay, remove item from context/cart
+    setTimeout(() => {
+      removeFromCart(id);
+      setRemovingIds(prev => prev.filter(remId => remId !== id));
+    }, 500); // matches CSS transition duration
+  };
 
   if (cart.length === 0) {
     return (
@@ -22,7 +33,10 @@ const Cart = () => {
 
       <div className="cart-items">
         {cart.map(item => (
-          <div key={item.id} className="cart-item">
+          <div
+            key={item.id}
+            className={`cart-item ${removingIds.includes(item.id) ? 'removing' : ''}`}
+          >
             <img src={item.image} alt={item.title} className="item-image" />
 
             <div className="item-details">
@@ -43,7 +57,7 @@ const Cart = () => {
 
               <button
                 className="remove-btn"
-                onClick={() => removeFromCart(item.id)}
+                onClick={() => handleRemove(item.id)}
                 aria-label={`Remove ${item.title} from cart`}
               >
                 Remove
@@ -56,6 +70,9 @@ const Cart = () => {
       <div className="cart-footer">
         <h2 className="total-label">Total:</h2>
         <span className="total-amount">${total.toFixed(2)}</span>
+
+       <a href="/checkout" className="checkout-btn">Proceed to Checkout</a>
+
       </div>
     </div>
   );
