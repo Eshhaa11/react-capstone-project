@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import products from '../data/productdata';
 import { CartContext } from '../Context/CartContext';
 import '../Styles/Products.css';
@@ -13,6 +13,17 @@ const Products = () => {
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
 
+  // Wishlist state with localStorage persistence
+  const [wishlist, setWishlist] = useState(() => {
+    const saved = localStorage.getItem('wishlist');
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // Save wishlist changes to localStorage
+  useEffect(() => {
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  }, [wishlist]);
+
   const filteredProducts = products.filter(p => {
     const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
     const matchesSearch = p.title.toLowerCase().includes(searchTerm.toLowerCase());
@@ -24,6 +35,15 @@ const Products = () => {
     setToastMessage(`${product.title} added to cart!`);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2000);
+  };
+
+  // Toggle wishlist for product
+  const toggleWishlist = (productId) => {
+    if (wishlist.includes(productId)) {
+      setWishlist(wishlist.filter(id => id !== productId));
+    } else {
+      setWishlist([...wishlist, productId]);
+    }
   };
 
   return (
@@ -39,7 +59,12 @@ const Products = () => {
       />
 
       <div className="category-buttons">
-        <button onClick={() => setSelectedCategory('All')} className={selectedCategory === 'All' ? 'active' : ''}>All</button>
+        <button
+          onClick={() => setSelectedCategory('All')}
+          className={selectedCategory === 'All' ? 'active' : ''}
+        >
+          All
+        </button>
         {categories.map(cat => (
           <button
             key={cat}
@@ -54,7 +79,13 @@ const Products = () => {
       {filteredProducts.length > 0 ? (
         <div className="product-grid">
           {filteredProducts.map(product => (
-            <div key={product.id} className="product-card" onClick={() => setSelectedProduct(product)}>
+            <div
+              key={product.id}
+              className="product-card"
+              onClick={() => setSelectedProduct(product)}
+            >
+              {/* Wishlist button removed from here */}
+
               <img src={product.image} alt={product.title} />
               <h4>{product.title}</h4>
               <p className="price">${product.price.toFixed(2)}</p>
@@ -79,13 +110,31 @@ const Products = () => {
               <h2>{selectedProduct.title}</h2>
               <p className="price">${selectedProduct.price.toFixed(2)}</p>
               <p>{selectedProduct.description}</p>
+
               <button onClick={() => handleAddToCart(selectedProduct)}>Add to Cart</button>
+
+              {/* Wishlist button only inside modal */}
+              <button
+                className={`wishlist-modal-btn ${wishlist.includes(selectedProduct.id) ? 'wishlisted' : ''}`}
+                onClick={() => {
+                  toggleWishlist(selectedProduct.id);
+                  setToastMessage(
+                    wishlist.includes(selectedProduct.id)
+                      ? `${selectedProduct.title} removed from wishlist.`
+                      : `${selectedProduct.title} added to wishlist!`
+                  );
+                  setShowToast(true);
+                  setTimeout(() => setShowToast(false), 2000);
+                }}
+                aria-label={wishlist.includes(selectedProduct.id) ? 'Remove from wishlist' : 'Add to wishlist'}
+              >
+                {wishlist.includes(selectedProduct.id) ? '❤️ Remove from Wishlist' : '🤍 Add to Wishlist'}
+              </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* Toast message */}
       <div className={`toast-message ${showToast ? 'show' : ''}`}>
         {toastMessage}
       </div>
