@@ -147,6 +147,35 @@
   margin-top: 3rem;
 }
 
+.product-card {
+  position: relative; /* needed for wishlist button absolute position */
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  user-select: none;
+  color: #6B4F4F;
+  z-index: 10;
+  outline: none;
+}
+
+.wishlist-btn:hover {
+  transform: scale(1.2);
+  color: #D9534F; /* bright red on hover */
+}
+
+.wishlist-btn.wishlisted {
+  color: #D9534F;
+}
+
+
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
