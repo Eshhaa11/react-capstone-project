@@ -148,7 +148,7 @@
 }
 
 .product-card {
-  position: relative; /* needed for wishlist button absolute position */
+  position: relative; 
 }
 
 .wishlist-btn {
