@@ -40,7 +40,7 @@ const Checkout = () => {
         <h3>Order Summary</h3>
         {cart.map(item => (
           <p key={item.id}>
-            {item.title} × {item.quantity} = ${(item.price * item.quantity).toFixed(2)}
+            {item.title} ×  {item.quantity} = ${(item.price * item.quantity).toFixed(2)}
           </p>
         ))}
         <strong>Total: ${total.toFixed(2)}</strong>
