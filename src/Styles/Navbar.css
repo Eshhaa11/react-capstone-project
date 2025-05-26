@@ -1,51 +1,52 @@
-/* Navbar.css */
+/* Global Font Upgrade */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  background-color: #FAFAF8; /* very light neutral */
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ffffffee;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
   z-index: 999;
+  font-family: 'Inter', sans-serif;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
 .navbar-logo {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
   letter-spacing: 0.05em;
-  cursor: pointer;
-  user-select: none;
   text-transform: uppercase;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 2rem;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-links li a {
-  color: #555;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
-  padding: 0.4rem 0;
+  color: #555;
+  padding-bottom: 2px;
   border-bottom: 2px solid transparent;
-  transition: border-color 0.25s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .nav-links li a:hover,
-.nav-links li a:focus {
-  border-bottom: 2px solid #6B4F4F; /* muted warm brown */
-  color: #6B4F4F;
-  outline: none;
+.nav-links li a.active {
+  color: #000;
+  border-bottom: 2px solid #6B4F4F;
 }
 
 .cart-badge {
@@ -61,12 +62,14 @@
   display: inline-block;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 1.5rem;
   }
+
   .nav-links {
-    gap: 1.2rem;
+    gap: 1.5rem;
   }
 }
 
@@ -76,8 +79,19 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
+
   .nav-links {
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    width: 100%;
+    padding: 0.5rem 0;
   }
 }
