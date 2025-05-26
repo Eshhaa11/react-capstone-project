@@ -1,107 +1,110 @@
-/* Home.css */
-
-/* Scroll enabled by default for all pages */
+/* Reset and base layout */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-y: auto;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
 }
 
-/* Disable scrolling only on Home */
+
 body.no-scroll-home {
   overflow: hidden;
 }
 
-.home-container {
+/* Hero section */
+.home-hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+  background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
-.home-container::before {
-  content: "";
+/* Dark transparent overlay */
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(107, 79, 79, 0.4); /* subtle brownish overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
-.overlay-content {
+/* Content styling */
+.hero-content {
   position: relative;
-  max-width: 600px;
-  color: #FAFAF8;
-  text-align: center;
   z-index: 1;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 2rem;
+  max-width: 720px;
 }
 
-.overlay-content h1 {
-  font-weight: 700;
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.15em;
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-.overlay-content p {
-  font-weight: 400;
+.hero-tagline {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #E6DED3;
-  letter-spacing: 0.05em;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: #E0E0E0;
+  line-height: 1.4;
 }
 
-.overlay-content a {
-  padding: 1rem 3rem;
+/* CTA button */
+.cta-button {
   background-color: #FAFAF8;
-  color: #6B4F4F;
+  color: #111;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 40px;
-  box-shadow: 0 6px 12px rgba(107,79,79,0.3);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  display: inline-block;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
-.overlay-content a:hover,
-.overlay-content a:focus {
-  background-color: #6B4F4F;
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #111;
   color: #FAFAF8;
-  outline: none;
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Styles */
-
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .overlay-content h1 {
+  .hero-title {
     font-size: 3rem;
   }
-  .overlay-content p {
-    font-size: 1.25rem;
+
+  .hero-tagline {
+    font-size: 1.2rem;
   }
-  .overlay-content a {
-    padding: 0.8rem 2.5rem;
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .overlay-content h1 {
+  .hero-title {
     font-size: 2.2rem;
   }
-  .overlay-content p {
+
+  .hero-tagline {
     font-size: 1rem;
   }
-  .overlay-content a {
-    padding: 0.7rem 2rem;
-    font-size: 1rem;
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
   }
 }
