@@ -13,7 +13,7 @@ const Products = () => {
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
 
-  // Wishlist state with localStorage persistence
+
   const [wishlist, setWishlist] = useState(() => {
     const saved = localStorage.getItem('wishlist');
     return saved ? JSON.parse(saved) : [];
