@@ -84,7 +84,7 @@ const Products = () => {
               className="product-card"
               onClick={() => setSelectedProduct(product)}
             >
-              {/* Wishlist button removed from here */}
+              
 
               <img src={product.image} alt={product.title} />
               <h4>{product.title}</h4>
