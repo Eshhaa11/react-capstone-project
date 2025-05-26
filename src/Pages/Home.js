@@ -3,21 +3,19 @@ import '../Styles/Home.css';
 
 const Home = () => {
   useEffect(() => {
-    // Add class to body when Home mounts
     document.body.classList.add('no-scroll-home');
-
-    // Remove class when Home unmounts (user navigates away)
     return () => {
       document.body.classList.remove('no-scroll-home');
     };
   }, []);
 
   return (
-    <div className="home-container">
-      <div className="overlay-content">
-        <h1>VibeFits</h1>
-        <p>Your Vibe, Your Hustle.</p>
-        <a href="/products" className="shop-button">Shop Now</a>
+    <div className="home-hero">
+      <div className="hero-overlay" />
+      <div className="hero-content">
+        <h1 className="hero-title">VibeFits</h1>
+        <p className="hero-tagline">Elevate Your Fit. Own Your Vibe.</p>
+        <a href="/products" className="cta-button">Explore Collection</a>
       </div>
     </div>
   );
