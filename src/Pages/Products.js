@@ -19,7 +19,6 @@ const Products = () => {
     return saved ? JSON.parse(saved) : [];
   });
 
-  // Save wishlist changes to localStorage
   useEffect(() => {
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
