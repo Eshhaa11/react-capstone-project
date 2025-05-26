@@ -9,7 +9,7 @@ const Products = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedProduct, setSelectedProduct] = useState(null); // for modal
+  const [selectedProduct, setSelectedProduct] = useState(null); 
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
 
