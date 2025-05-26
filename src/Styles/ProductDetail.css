@@ -1,4 +1,4 @@
-/* ProductDetail.css */
+
 
 .detail-container {
   max-width: 900px;
@@ -6,7 +6,7 @@
   padding: 24px;
   display: flex;
   gap: 40px;
-  background-color: #F4F1EE; /* Light neutral background */
+  background-color: #F4F1EE; 
   border-radius: 12px;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   color: #3C2F2F;
