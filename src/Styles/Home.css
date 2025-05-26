@@ -26,7 +26,7 @@ body.no-scroll-home {
   overflow: hidden;
 }
 
-/* Dark transparent overlay */
+
 .hero-overlay {
   position: absolute;
   inset: 0;
