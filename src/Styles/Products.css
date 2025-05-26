@@ -168,7 +168,7 @@
 
 .wishlist-btn:hover {
   transform: scale(1.2);
-  color: #D9534F; /* bright red on hover */
+  color: #D9534F; 
 }
 
 .wishlist-btn.wishlisted {
