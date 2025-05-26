@@ -78,7 +78,7 @@ body.no-scroll-home {
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 3rem;
