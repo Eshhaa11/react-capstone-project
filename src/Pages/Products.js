@@ -37,7 +37,7 @@ const Products = () => {
     setTimeout(() => setShowToast(false), 2000);
   };
 
-  // Toggle wishlist for product
+  
   const toggleWishlist = (productId) => {
     if (wishlist.includes(productId)) {
       setWishlist(wishlist.filter(id => id !== productId));
