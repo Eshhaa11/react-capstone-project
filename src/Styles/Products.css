@@ -1,10 +1,9 @@
-
 .products-page {
   padding: 3rem 2rem;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .products-page h2 {
@@ -12,7 +11,7 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   letter-spacing: 0.1em;
-  color: #6B4F4F;
+  color: #6b4f4f;
   text-transform: uppercase;
 }
 
@@ -21,14 +20,14 @@
   max-width: 400px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 1.5px solid #D7CCC8;
+  border: 1.5px solid #d7ccc8;
   border-radius: 8px;
   margin-bottom: 1.8rem;
   transition: border-color 0.3s ease;
 }
 
 .search-bar:focus {
-  border-color: #6B4F4F;
+  border-color: #6b4f4f;
   outline: none;
 }
 
@@ -41,8 +40,8 @@
 
 .category-buttons button {
   background: none;
-  border: 1.8px solid #D7CCC8;
-  color: #6B4F4F;
+  border: 1.8px solid #d7ccc8;
+  color: #6b4f4f;
   padding: 0.7rem 1.6rem;
   font-weight: 600;
   border-radius: 24px;
@@ -54,9 +53,9 @@
 
 .category-buttons button.active,
 .category-buttons button:hover {
-  background-color: #6B4F4F;
-  color: #FAFAF8;
-  border-color: #6B4F4F;
+  background-color: #6b4f4f;
+  color: #fafaf8;
+  border-color: #6b4f4f;
 }
 
 .product-grid {
@@ -66,7 +65,7 @@
 }
 
 .product-card {
-  background-color: #FAFAF8;
+  background-color: #fafaf8;
   border-radius: 16px;
   box-shadow: 0 6px 12px rgba(107, 79, 79, 0.1);
   padding: 1.4rem;
@@ -97,27 +96,27 @@
   font-weight: 600;
   font-size: 1.15rem;
   margin-bottom: 0.25rem;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .price {
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #6B4F4F;
+  color: #6b4f4f;
 }
 
 .description {
   font-weight: 400;
   font-size: 0.9rem;
   margin-bottom: 1rem;
-  color: #7B7B7B;
+  color: #7b7b7b;
   flex-grow: 1;
 }
 
 .product-card button {
-  background-color: #6B4F4F;
-  color: #FAFAF8;
+  background-color: #6b4f4f;
+  color: #fafaf8;
   font-weight: 700;
   font-size: 1rem;
   padding: 0.7rem 1.2rem;
@@ -129,14 +128,14 @@
 
 .product-card button:hover,
 .product-card button:focus {
-  background-color: #4B3F3F;
+  background-color: #4b3f3f;
   outline: none;
 }
 
 .no-results {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #A49C9B;
+  color: #a49c9b;
   text-align: center;
   margin-top: 3rem;
 }
@@ -151,20 +150,19 @@
   cursor: pointer;
   transition: transform 0.2s ease;
   user-select: none;
-  color: #6B4F4F;
+  color: #6b4f4f;
   z-index: 10;
   outline: none;
 }
 
 .wishlist-btn:hover {
   transform: scale(1.2);
-  color: #D9534F;
+  color: #d9534f;
 }
 
 .wishlist-btn.wishlisted {
-  color: #D9534F;
+  color: #d9534f;
 }
-
 
 .modal-overlay {
   position: fixed;
@@ -180,7 +178,7 @@
 }
 
 .modal-content {
-  background: #FAFAF8;
+  background: #fafaf8;
   border-radius: 16px;
   max-width: 700px;
   width: 90%;
@@ -216,26 +214,26 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .modal-details .price {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.4rem;
-  color: #6B4F4F;
+  color: #6b4f4f;
 }
 
 .modal-details p {
   font-size: 0.95rem;
-  color: #7B7B7B;
+  color: #7b7b7b;
   margin-top: 0;
   margin-bottom: 1.2rem;
 }
 
 .modal-details button {
-  background-color: #6B4F4F;
-  color: #FAFAF8;
+  background-color: #6b4f4f;
+  color: #fafaf8;
   font-weight: 700;
   font-size: 1rem;
   padding: 0.7rem 1.2rem;
@@ -246,7 +244,7 @@
 }
 
 .modal-details button:hover {
-  background-color: #4B3F3F;
+  background-color: #4b3f3f;
 }
 
 .modal-close {
@@ -254,19 +252,18 @@
   top: 16px;
   right: 20px;
   font-size: 1.6rem;
-  color: #6B4F4F;
+  color: #6b4f4f;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-
 .toast-message {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #6B4F4F;
-  color: #FAFAF8;
+  background-color: #6b4f4f;
+  color: #fafaf8;
   padding: 10px 20px;
   border-radius: 24px;
   font-weight: 700;
@@ -281,7 +278,6 @@
   opacity: 1;
   pointer-events: auto;
 }
-
 
 @media (max-width: 1024px) {
   .products-page {
