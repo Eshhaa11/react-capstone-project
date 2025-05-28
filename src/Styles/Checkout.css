@@ -132,7 +132,7 @@
 }
 
 .btn-back-shop:hover {
-  background-color: #4b3f3f; /* darker brown hover */
+  background-color: #4b3f3f; 
   box-shadow: 0 6px 16px rgba(75, 63, 63, 0.5);
 }
 
