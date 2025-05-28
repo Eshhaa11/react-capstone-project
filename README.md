@@ -1,49 +1,44 @@
+# 🛒 React Shopping Cart
 
-# 🛒 React Shopping Cart Application
-
-Welcome to the React Shopping Cart project — a sleek, modern web app built with React that lets users browse products, check product details, manage a shopping cart, and complete checkout smoothly. This project emphasizes clean code structure, state management, and responsive UI.
+A modern, minimal shopping cart built with **React**. Browse products, view details, manage a cart, and complete checkout — all with responsive design and clean UI.
 
 ---
 
-## 🏗️ How It’s Built
-
-This app is built primarily using React with React Router for navigation and Context API for managing global cart state. The project structure includes:
+## 📁 Project Structure
 
 ```
 / (root)
 ├── src/
-├──Index.js
 │   ├── Assets/           # Static images and product assets
 │   ├── Components/       # Reusable UI components (e.g., Navbar)
 │   ├── Context/          # React Context for cart state management
-│   ├── Data/             # Static product data JSON or JS files
+│   ├── Data/             # Static product data (JS file)
 │   ├── Pages/            # Main pages (Home, Products, Cart, Checkout, ProductDetail)
 │   ├── Styles/           # CSS files scoped to components
-│            # ReactDOM render entry point
 ├── App.js                # Main App component with routing
+├── Index.js              # ReactDOM render entry point
 └── README.md             # This file
 ```
 
-
 ---
 
-## 🚀 Getting Started
+## ⚙️ Getting Started
 
-### Installation
+### 🧩 Installation
 
 ```bash
-git clone https://github.com/your-username/react-shopping-cart.git
-cd react-shopping-cart
+git clone https://github.com/Eshhaa11/react-capstone-project
+cd react-capstone-project
 npm install
 ```
 
-### Running the App
+### 🚀 Run the App
 
 ```bash
 npm start
 ```
 
-### Building for Production
+### 🔧 Build for Production
 
 ```bash
 npm run build
@@ -51,45 +46,37 @@ npm run build
 
 ---
 
-## 🛠️ Features
+## 🧠 Tech Stack
 
-- Browse a list of products with images and prices
-- Navigate to detailed product pages
-- Add, remove, and adjust quantities of items in the cart
-- View real-time cart total updates
-- Complete checkout process with form validation
-- Responsive design for all devices
-- Friendly 404 page for unmatched routes
-- Global state management with React Context API
+- **React** – Component-based SPA
+- **React Router** – Declarative routing
+- **React Context API** – Global cart state
+- **CSS** – Component-scoped styling
+- **localStorage** – Persistent cart state
 
 ---
 
-## 📚 Tech Stack
+## ✨ Features
 
-- React (functional components & hooks)
-- React Router DOM (for client-side routing)
-- React Context API (for cart state)
-- CSS Modules or scoped CSS (for component styles)
-- Static assets stored locally under `/src/Assets`
-
----
-
-## 🚧 Planned Enhancements
-
-- Backend API integration for real product data
-- Persistent cart state via localStorage or sessionStorage
-- Search and filter products functionality
-- Confirmation page after checkout
+- 🏠 Home and Products pages
+- 🔍 Product details with dynamic routing
+- ➕ Add/remove items to/from cart
+- 🧮 Cart total and quantity updates in real-time
+- 🛒 Persistent cart (even after refresh)
+- ✅ Checkout flow with post-checkout confirmation
+- 📱 Responsive layout across devices
 
 ---
 
-## 🧑‍💻 Author
+## 📌 Planned Enhancements
 
-Made with ❤️ by [Your Name]  
-[GitHub](https://github.com/your-username) | [Portfolio](https://your-portfolio.com)
+- 🔗 Backend API integration 
 
 ---
 
-## 📜 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 🙋‍♂️ Author
+
+Made by Esha Patel 
+🔗 [GitHub](https://github.com/Eshhaa11)
