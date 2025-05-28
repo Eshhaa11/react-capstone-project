@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to="/" className="navbar-logo">VibeFits</Link>
       
-      {/* Hamburger button for mobile */}
+      
       <button 
         className={`menu-toggle ${menuOpen ? 'open' : ''}`}
         onClick={toggleMenu}
