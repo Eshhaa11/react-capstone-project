@@ -64,12 +64,13 @@ const Checkout = () => {
           value={form.address}
           onChange={handleChange}
         />
-        <input
-          name="payment"
-          placeholder="Payment Method"
-          value={form.payment}
-          onChange={handleChange}
-        />
+        <select name="payment" value={form.payment} onChange={handleChange}>
+          <option value="">Select Payment Method</option>
+          <option value="credit">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="cod">Cash on Delivery</option>
+        </select>
+
         <button type="submit">Place Order</button>
       </form>
 
