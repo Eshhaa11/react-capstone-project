@@ -1,11 +1,16 @@
 import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
+import { WishlistContext } from '../Context/WishlistContext'; // import your wishlist context
 import '../Styles/Navbar.css';
 
 const Navbar = () => {
   const { cart } = useContext(CartContext);
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+  const { wishlist } = useContext(WishlistContext);
+  const wishlistCount = wishlist.length;
+
   const { pathname } = useLocation();
 
   return (
@@ -17,6 +22,11 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/products" className={pathname === '/products' ? 'active' : ''}>Products</Link>
+        </li>
+        <li>
+          <Link to="/wishlist" className={pathname === '/wishlist' ? 'active' : ''}>
+            Wishlist {wishlistCount > 0 && <span className="wishlist-badge">{wishlistCount}</span>}
+          </Link>
         </li>
         <li>
           <Link to="/cart" className={pathname === '/cart' ? 'active' : ''}>
