@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../Context/CartContext';
 import '../Styles/Checkout.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
   const { cart, clearCart } = useContext(CartContext);
   const [form, setForm] = useState({ name: '', email: '', address: '', payment: '' });
   const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -14,13 +15,24 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(form).some(val => val.trim() === '')) return alert('Please fill all fields.');
+    if (Object.values(form).some(val => val.trim() === '')) {
+      alert('Please fill all fields.');
+      return;
+    }
     setSubmitted(true);
     clearCart();
   };
 
   if (submitted) {
-    return <h2>Thank you for your purchase, {form.name}!</h2>;
+    return (
+      <div className="checkout-success">
+        <h2>Thank you for your purchase, {form.name}!</h2>
+        <p>Your order has been successfully placed.</p>
+        <button className="btn-back-shop" onClick={() => navigate('/')}>
+          Continue Shopping
+        </button>
+      </div>
+    );
   }
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -29,10 +41,30 @@ const Checkout = () => {
     <div className="checkout-container">
       <h2>Checkout</h2>
       <form onSubmit={handleSubmit} className="checkout-form">
-        <input name="name" placeholder="Full Name" onChange={handleChange} />
-        <input name="email" placeholder="Email" onChange={handleChange} />
-        <input name="address" placeholder="Address" onChange={handleChange} />
-        <input name="payment" placeholder="Payment Method" onChange={handleChange} />
+        <input
+          name="name"
+          placeholder="Full Name"
+          value={form.name}
+          onChange={handleChange}
+        />
+        <input
+          name="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={handleChange}
+        />
+        <input
+          name="address"
+          placeholder="Address"
+          value={form.address}
+          onChange={handleChange}
+        />
+        <input
+          name="payment"
+          placeholder="Payment Method"
+          value={form.payment}
+          onChange={handleChange}
+        />
         <button type="submit">Place Order</button>
       </form>
 
@@ -40,7 +72,7 @@ const Checkout = () => {
         <h3>Order Summary</h3>
         {cart.map(item => (
           <p key={item.id}>
-            {item.title} ×  {item.quantity} = ${(item.price * item.quantity).toFixed(2)}
+            {item.title} × {item.quantity} = ${(item.price * item.quantity).toFixed(2)}
           </p>
         ))}
         <strong>Total: ${total.toFixed(2)}</strong>
