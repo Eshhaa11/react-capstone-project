@@ -6,7 +6,7 @@ import '../Styles/Wishlist.css';
 const Wishlist = () => {
   const { wishlist, setWishlist } = useContext(WishlistContext);
 
-  // Get full product details for wishlist items
+  
   const wishlistProducts = products.filter(product => wishlist.includes(product.id));
 
   const removeFromWishlist = (productId) => {
