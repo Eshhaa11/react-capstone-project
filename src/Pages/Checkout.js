@@ -28,7 +28,7 @@ const Checkout = () => {
       <div className="checkout-success">
         <h2>Thank you for your purchase, {form.name}!</h2>
         <p>Your order has been successfully placed.</p>
-        <button className="btn-back-shop" onClick={() => navigate('/')}>
+        <button className="btn-back-shop" onClick={() => navigate('/Products')}>
           Continue Shopping
         </button>
       </div>
