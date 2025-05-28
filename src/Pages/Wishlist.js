@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { WishlistContext } from '../Context/WishlistContext';
 import products from '../data/productdata';
-import '../Styles/Wishlist.css';  // optional, style as you want
+import '../Styles/Wishlist.css';  
 
 const Wishlist = () => {
   const { wishlist, setWishlist } = useContext(WishlistContext);
