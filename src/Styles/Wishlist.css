@@ -86,7 +86,7 @@
   background-color: #4b3f3f;
 }
 
-/* Medium Screens (Tablets) */
+
 @media (max-width: 1024px) {
   .wishlist-page {
     padding: 2rem 1.5rem;
