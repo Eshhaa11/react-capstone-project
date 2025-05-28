@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap");
 
 .cart-wrapper {
   max-width: 900px;
@@ -7,7 +7,7 @@
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3a3a3a;
 }
 
@@ -167,7 +167,7 @@
   max-width: 500px;
   margin: 6rem auto;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #7a5e4e;
   padding: 2rem;
   border: 2px dashed #cbb6a1;
@@ -206,7 +206,6 @@
   background-color: #a1765a;
   outline: none;
 }
-
 
 @media (max-width: 768px) {
   .cart-item {
