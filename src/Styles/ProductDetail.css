@@ -1,57 +1,59 @@
-
-
 .detail-container {
   max-width: 900px;
   margin: 40px auto;
   padding: 24px;
   display: flex;
   gap: 40px;
-  background-color: #F4F1EE; 
+  background-color: #f4f1ee;
   border-radius: 12px;
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  color: #3C2F2F;
+  color: #3c2f2f;
   box-shadow: 0 8px 16px rgba(60, 47, 47, 0.1);
+  flex-wrap: wrap;
 }
 
 .detail-image {
   flex: 1;
+  min-width: 280px;
   max-width: 450px;
+  width: 100%;
   border-radius: 12px;
   object-fit: cover;
-  border: 1px solid #D1BFA9;
+  border: 1px solid #d1bfa9;
   box-shadow: 0 4px 8px rgba(60, 47, 47, 0.1);
 }
 
 .detail-info {
   flex: 1;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .detail-info h2 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
   margin-bottom: 16px;
   font-weight: 600;
 }
 
 .detail-price {
-  font-size: 1.5rem;
-  color: #8A7F71; 
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: #8a7f71;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 .detail-info p {
   flex-grow: 1;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  line-height: 1.6;
   margin-bottom: 32px;
-  color: #4B3832;
+  color: #4b3832;
 }
 
 .detail-info button {
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   color: white;
   border: none;
   padding: 14px 24px;
@@ -69,38 +71,34 @@
 
 .detail-info a {
   margin-top: 24px;
-  color: #8A7F71;
+  color: #8a7f71;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
 .detail-info a:hover {
-  color: #3C2F2F;
+  color: #3c2f2f;
 }
 
-/* Responsive */
 
 @media (max-width: 900px) {
   .detail-container {
     flex-direction: column;
     padding: 20px;
-    max-width: 90%;
-  }
-
-  .detail-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 24px;
+    max-width: 95%;
+    gap: 24px;
   }
 
   .detail-info button {
     width: 100%;
     padding: 14px 0;
+    text-align: center;
   }
 }
 
+/* Phone */
 @media (max-width: 480px) {
   .detail-info h2 {
     font-size: 1.6rem;
@@ -114,5 +112,11 @@
   .detail-info p {
     font-size: 0.9rem;
     margin-bottom: 24px;
+  }
+
+  .detail-info a {
+    font-size: 0.85rem;
+    text-align: center;
+    display: block;
   }
 }
