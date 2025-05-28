@@ -96,7 +96,7 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Tablet and up: normal inline nav */
+
 @media (min-width: 769px) {
   .nav-links {
     display: flex !important;
