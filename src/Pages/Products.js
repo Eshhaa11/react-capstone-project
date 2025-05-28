@@ -1,24 +1,27 @@
-import React, { useContext, useState } from 'react';
-import products from '../data/productdata';
-import { CartContext } from '../Context/CartContext';
-import { WishlistContext } from '../Context/WishlistContext';
-import '../Styles/Products.css';
+import React, { useContext, useState } from "react";
+import products from "../data/productdata";
+import { CartContext } from "../Context/CartContext";
+import { WishlistContext } from "../Context/WishlistContext";
+import "../Styles/Products.css";
 
 const Products = () => {
   const { addToCart } = useContext(CartContext);
   const { wishlist, setWishlist } = useContext(WishlistContext);
 
-  const categories = [...new Set(products.map(p => p.category))];
+  const categories = [...new Set(products.map((p) => p.category))];
 
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [toastMessage, setToastMessage] = useState('');
+  const [toastMessage, setToastMessage] = useState("");
   const [showToast, setShowToast] = useState(false);
 
-  const filteredProducts = products.filter(p => {
-    const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
-    const matchesSearch = p.title.toLowerCase().includes(searchTerm.toLowerCase());
+  const filteredProducts = products.filter((p) => {
+    const inCategory =
+      selectedCategory === "All" || p.category === selectedCategory;
+    const matchesSearch = p.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
     return inCategory && matchesSearch;
   });
 
@@ -31,7 +34,7 @@ const Products = () => {
 
   const toggleWishlist = (productId) => {
     if (wishlist.includes(productId)) {
-      setWishlist(wishlist.filter(id => id !== productId));
+      setWishlist(wishlist.filter((id) => id !== productId));
     } else {
       setWishlist([...wishlist, productId]);
     }
@@ -45,21 +48,21 @@ const Products = () => {
         type="text"
         placeholder="Search products..."
         value={searchTerm}
-        onChange={e => setSearchTerm(e.target.value)}
+        onChange={(e) => setSearchTerm(e.target.value)}
         className="search-bar"
       />
 
       <div className="category-buttons">
         <button
-          onClick={() => setSelectedCategory('All')}
-          className={selectedCategory === 'All' ? 'active' : ''}
+          onClick={() => setSelectedCategory("All")}
+          className={selectedCategory === "All" ? "active" : ""}
         >
           All
         </button>
-        {categories.map(cat => (
+        {categories.map((cat) => (
           <button
             key={cat}
-            className={selectedCategory === cat ? 'active' : ''}
+            className={selectedCategory === cat ? "active" : ""}
             onClick={() => setSelectedCategory(cat)}
           >
             {cat}
@@ -69,7 +72,7 @@ const Products = () => {
 
       {filteredProducts.length > 0 ? (
         <div className="product-grid">
-          {filteredProducts.map(product => (
+          {filteredProducts.map((product) => (
             <div
               key={product.id}
               className="product-card"
@@ -84,14 +87,20 @@ const Products = () => {
         </div>
       ) : (
         <div className="no-results">
-          😔 Sorry, we don't have any products matching "<strong>{searchTerm}</strong>" right now.
+          😔 Sorry, we don't have any products matching "
+          <strong>{searchTerm}</strong>" right now.
         </div>
       )}
 
       {selectedProduct && (
         <div className="modal-overlay" onClick={() => setSelectedProduct(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedProduct(null)}>×</button>
+            <button
+              className="modal-close"
+              onClick={() => setSelectedProduct(null)}
+            >
+              ×
+            </button>
             <div className="modal-image">
               <img src={selectedProduct.image} alt={selectedProduct.title} />
             </div>
@@ -100,10 +109,14 @@ const Products = () => {
               <p className="price">${selectedProduct.price.toFixed(2)}</p>
               <p>{selectedProduct.description}</p>
 
-              <button onClick={() => handleAddToCart(selectedProduct)}>Add to Cart</button>
+              <button onClick={() => handleAddToCart(selectedProduct)}>
+                Add to Cart
+              </button>
 
               <button
-                className={`wishlist-modal-btn ${wishlist.includes(selectedProduct.id) ? 'wishlisted' : ''}`}
+                className={`wishlist-modal-btn ${
+                  wishlist.includes(selectedProduct.id) ? "wishlisted" : ""
+                }`}
                 onClick={() => {
                   toggleWishlist(selectedProduct.id);
                   setToastMessage(
@@ -114,16 +127,22 @@ const Products = () => {
                   setShowToast(true);
                   setTimeout(() => setShowToast(false), 2000);
                 }}
-                aria-label={wishlist.includes(selectedProduct.id) ? 'Remove from wishlist' : 'Add to wishlist'}
+                aria-label={
+                  wishlist.includes(selectedProduct.id)
+                    ? "Remove from wishlist"
+                    : "Add to wishlist"
+                }
               >
-                {wishlist.includes(selectedProduct.id) ? '❤️ Remove from Wishlist' : '🤍 Add to Wishlist'}
+                {wishlist.includes(selectedProduct.id)
+                  ? "❤️ Remove from Wishlist"
+                  : "🤍 Add to Wishlist"}
               </button>
             </div>
           </div>
         </div>
       )}
 
-      <div className={`toast-message ${showToast ? 'show' : ''}`}>
+      <div className={`toast-message ${showToast ? "show" : ""}`}>
         {toastMessage}
       </div>
     </div>
