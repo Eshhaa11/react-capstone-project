@@ -1,11 +1,16 @@
-import React, { useContext, useState } from 'react';
-import { CartContext } from '../Context/CartContext';
-import '../Styles/Checkout.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from "react";
+import { CartContext } from "../Context/CartContext";
+import "../Styles/Checkout.css";
+import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
   const { cart, clearCart } = useContext(CartContext);
-  const [form, setForm] = useState({ name: '', email: '', address: '', payment: '' });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    address: "",
+    payment: "",
+  });
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate();
 
@@ -15,8 +20,8 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(form).some(val => val.trim() === '')) {
-      alert('Please fill all fields.');
+    if (Object.values(form).some((val) => val.trim() === "")) {
+      alert("Please fill all fields.");
       return;
     }
     setSubmitted(true);
@@ -28,7 +33,7 @@ const Checkout = () => {
       <div className="checkout-success">
         <h2>Thank you for your purchase, {form.name}!</h2>
         <p>Your order has been successfully placed.</p>
-        <button className="btn-back-shop" onClick={() => navigate('/Products')}>
+        <button className="btn-back-shop" onClick={() => navigate("/Products")}>
           Continue Shopping
         </button>
       </div>
@@ -70,9 +75,10 @@ const Checkout = () => {
 
       <div className="order-summary">
         <h3>Order Summary</h3>
-        {cart.map(item => (
+        {cart.map((item) => (
           <p key={item.id}>
-            {item.title} × {item.quantity} = ${(item.price * item.quantity).toFixed(2)}
+            {item.title} × {item.quantity} = $
+            {(item.price * item.quantity).toFixed(2)}
           </p>
         ))}
         <strong>Total: ${total.toFixed(2)}</strong>
