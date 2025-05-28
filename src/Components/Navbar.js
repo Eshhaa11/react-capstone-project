@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link to="/" className={pathname === '/' ? 'active' : ''}>Home</Link>
         </li>
         <li>
-          <Link to="/products" className={pathname === '/products' ? 'active' : ''}>Shop</Link>
+          <Link to="/products" className={pathname === '/products' ? 'active' : ''}>Products</Link>
         </li>
         <li>
           <Link to="/cart" className={pathname === '/cart' ? 'active' : ''}>
