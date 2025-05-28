@@ -1,27 +1,20 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import products from '../data/productdata';
 import { CartContext } from '../Context/CartContext';
+import { WishlistContext } from '../Context/WishlistContext';
 import '../Styles/Products.css';
 
 const Products = () => {
   const { addToCart } = useContext(CartContext);
+  const { wishlist, setWishlist } = useContext(WishlistContext);
+
   const categories = [...new Set(products.map(p => p.category))];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedProduct, setSelectedProduct] = useState(null); 
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
-
-
-  const [wishlist, setWishlist] = useState(() => {
-    const saved = localStorage.getItem('wishlist');
-    return saved ? JSON.parse(saved) : [];
-  });
-
-  useEffect(() => {
-    localStorage.setItem('wishlist', JSON.stringify(wishlist));
-  }, [wishlist]);
 
   const filteredProducts = products.filter(p => {
     const inCategory = selectedCategory === 'All' || p.category === selectedCategory;
@@ -36,7 +29,6 @@ const Products = () => {
     setTimeout(() => setShowToast(false), 2000);
   };
 
-  
   const toggleWishlist = (productId) => {
     if (wishlist.includes(productId)) {
       setWishlist(wishlist.filter(id => id !== productId));
@@ -83,8 +75,6 @@ const Products = () => {
               className="product-card"
               onClick={() => setSelectedProduct(product)}
             >
-              
-
               <img src={product.image} alt={product.title} />
               <h4>{product.title}</h4>
               <p className="price">${product.price.toFixed(2)}</p>
@@ -112,7 +102,6 @@ const Products = () => {
 
               <button onClick={() => handleAddToCart(selectedProduct)}>Add to Cart</button>
 
-              {/* Wishlist button only inside modal */}
               <button
                 className={`wishlist-modal-btn ${wishlist.includes(selectedProduct.id) ? 'wishlisted' : ''}`}
                 onClick={() => {
