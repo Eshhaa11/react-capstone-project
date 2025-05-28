@@ -24,7 +24,6 @@ This app is built primarily using React with React Router for navigation and Con
 └── README.md             # This file
 ```
 
-Note: `App.js` and `index.js` are outside the `src/` directory, following your project setup.
 
 ---
 
