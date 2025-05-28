@@ -70,7 +70,7 @@ npm run build
 
 ## 📌 Planned Enhancements
 
-- 🔗 Backend API integration 
+- 🔗 Backend API integration to enhance other features
 
 ---
 
