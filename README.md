@@ -12,6 +12,7 @@ This app is built primarily using React with React Router for navigation and Con
 ```
 / (root)
 ├── src/
+├──Index.js
 │   ├── Assets/           # Static images and product assets
 │   ├── Components/       # Reusable UI components (e.g., Navbar)
 │   ├── Context/          # React Context for cart state management
