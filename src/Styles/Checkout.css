@@ -78,6 +78,53 @@
   margin-bottom: 0.4rem;
 }
 
+.checkout-success {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+  background-color: #f0fff4;
+  border: 2px solid #4caf50;
+  border-radius: 16px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d662d;
+  box-shadow: 0 8px 24px rgba(76, 175, 80, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.checkout-success h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-success p {
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn-back-shop {
+  margin-top: 2rem;
+  background-color: #4caf50;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back-shop:hover {
+  background-color: #3b8e3b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+
 @media (max-width: 600px) {
   .checkout-container {
     margin: 2rem 1rem;
