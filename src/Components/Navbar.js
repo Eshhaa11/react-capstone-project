@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
-import { WishlistContext } from '../Context/WishlistContext'; // import your wishlist context
+import { WishlistContext } from '../Context/WishlistContext'; 
 import '../Styles/Navbar.css';
 
 const Navbar = () => {
