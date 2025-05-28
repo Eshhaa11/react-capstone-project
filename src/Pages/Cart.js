@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react';
-import { CartContext } from '../Context/CartContext';
-import '../Styles/Cart.css';
+import React, { useContext, useState } from "react";
+import { CartContext } from "../Context/CartContext";
+import "../Styles/Cart.css";
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
@@ -9,13 +9,12 @@ const Cart = () => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleRemove = (id) => {
-   
-    setRemovingIds(prev => [...prev, id]);
-    
+    setRemovingIds((prev) => [...prev, id]);
+
     setTimeout(() => {
       removeFromCart(id);
-      setRemovingIds(prev => prev.filter(remId => remId !== id));
-    }, 500); 
+      setRemovingIds((prev) => prev.filter((remId) => remId !== id));
+    }, 500);
   };
 
   if (cart.length === 0) {
@@ -32,10 +31,12 @@ const Cart = () => {
       <h1 className="cart-title">Shopping Cart</h1>
 
       <div className="cart-items">
-        {cart.map(item => (
+        {cart.map((item) => (
           <div
             key={item.id}
-            className={`cart-item ${removingIds.includes(item.id) ? 'removing' : ''}`}
+            className={`cart-item ${
+              removingIds.includes(item.id) ? "removing" : ""
+            }`}
           >
             <img src={item.image} alt={item.title} className="item-image" />
 
@@ -44,13 +45,20 @@ const Cart = () => {
               <p className="item-price">${item.price.toFixed(2)}</p>
 
               <div className="quantity-controls">
-                <label htmlFor={`qty-${item.id}`} className="qty-label">Qty:</label>
+                <label htmlFor={`qty-${item.id}`} className="qty-label">
+                  Qty:
+                </label>
                 <input
                   id={`qty-${item.id}`}
                   type="number"
                   min="1"
                   value={item.quantity}
-                  onChange={e => updateQuantity(item.id, Math.max(1, parseInt(e.target.value) || 1))}
+                  onChange={(e) =>
+                    updateQuantity(
+                      item.id,
+                      Math.max(1, parseInt(e.target.value) || 1)
+                    )
+                  }
                   className="qty-input"
                 />
               </div>
@@ -71,8 +79,9 @@ const Cart = () => {
         <h2 className="total-label">Total:</h2>
         <span className="total-amount">${total.toFixed(2)}</span>
 
-       <a href="/checkout" className="checkout-btn">Proceed to Checkout</a>
-
+        <a href="/checkout" className="checkout-btn">
+          Proceed to Checkout
+        </a>
       </div>
     </div>
   );
