@@ -135,7 +135,7 @@
   }
 }
 
-/* Phone: dropdown below navbar */
+
 @media (max-width: 480px) {
   .menu-toggle {
     display: flex;
