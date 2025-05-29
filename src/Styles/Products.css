@@ -1,5 +1,5 @@
 .products-page {
-  padding: 48px 32px; 
+  padding: 48px 32px;
   font-family: "Helvetica Neue", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
@@ -8,8 +8,8 @@
 
 .products-page h2 {
   font-weight: 700;
-  font-size: 32px; 
-  margin-bottom: 24px; 
+  font-size: 32px;
+  margin-bottom: 24px;
   letter-spacing: 0.1em;
   color: #6b4f4f;
   text-transform: uppercase;
@@ -18,11 +18,11 @@
 .search-bar {
   width: 100%;
   max-width: 400px;
-  padding: 8px 16px; 
-  font-size: 16px; 
+  padding: 8px 16px;
+  font-size: 16px;
   border: 1.5px solid #d7ccc8;
   border-radius: 8px;
-  margin-bottom: 28.8px; 
+  margin-bottom: 28.8px;
   transition: border-color 0.3s ease;
 }
 
@@ -35,19 +35,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 32px; 
+  margin-bottom: 32px;
 }
 
 .category-buttons button {
   background: none;
   border: 1.8px solid #d7ccc8;
   color: #6b4f4f;
-  padding: 11.2px 25.6px; 
+  padding: 11.2px 25.6px;
   font-weight: 600;
   border-radius: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 16px; 
+  font-size: 16px;
   text-transform: capitalize;
 }
 
@@ -61,14 +61,14 @@
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 32px; 
+  gap: 32px;
 }
 
 .product-card {
   background-color: #fafaf8;
   border-radius: 16px;
   box-shadow: 0 6px 12px rgba(107, 79, 79, 0.1);
-  padding: 22.4px; 
+  padding: 22.4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,7 +86,7 @@
   height: 220px;
   object-fit: contain;
   border-radius: 12px;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
   background-color: #f5f5f5;
   padding: 10px;
   cursor: pointer;
@@ -94,22 +94,22 @@
 
 .product-card h4 {
   font-weight: 600;
-  font-size: 18.4px; 
-  margin-bottom: 4px; 
+  font-size: 18.4px;
+  margin-bottom: 4px;
   color: #4a4a4a;
 }
 
 .price {
   font-weight: 700;
-  font-size: 16px; 
-  margin-bottom: 8px; 
+  font-size: 16px;
+  margin-bottom: 8px;
   color: #6b4f4f;
 }
 
 .description {
   font-weight: 400;
-  font-size: 14.4px; 
-  margin-bottom: 16px; 
+  font-size: 14.4px;
+  margin-bottom: 16px;
   color: #7b7b7b;
   flex-grow: 1;
 }
@@ -118,8 +118,8 @@
   background-color: #6b4f4f;
   color: #fafaf8;
   font-weight: 700;
-  font-size: 16px; 
-  padding: 11.2px 19.2px; 
+  font-size: 16px;
+  padding: 11.2px 19.2px;
   border: none;
   border-radius: 24px;
   cursor: pointer;
@@ -137,7 +137,7 @@
   font-weight: 500;
   color: #a49c9b;
   text-align: center;
-  margin-top: 48px; 
+  margin-top: 48px;
 }
 
 .wishlist-btn {
@@ -146,7 +146,7 @@
   right: 12px;
   background: transparent;
   border: none;
-  font-size: 24px; 
+  font-size: 24px;
   cursor: pointer;
   transition: transform 0.2s ease;
   user-select: none;
@@ -182,10 +182,10 @@
   border-radius: 16px;
   max-width: 700px;
   width: 90%;
-  padding: 32px; 
+  padding: 32px;
   display: flex;
   flex-direction: row;
-  gap: 32px; 
+  gap: 32px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -211,32 +211,32 @@
 }
 
 .modal-details h2 {
-  font-size: 22.4px; 
+  font-size: 22.4px;
   font-weight: 600;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
   color: #4a4a4a;
 }
 
 .modal-details .price {
-  font-size: 17.6px; 
+  font-size: 17.6px;
   font-weight: 700;
-  margin-bottom: 6.4px; 
+  margin-bottom: 6.4px;
   color: #6b4f4f;
 }
 
 .modal-details p {
-  font-size: 15.2px; 
+  font-size: 15.2px;
   color: #7b7b7b;
   margin-top: 0;
-  margin-bottom: 19.2px; 
+  margin-bottom: 19.2px;
 }
 
 .modal-details button {
   background-color: #6b4f4f;
   color: #fafaf8;
   font-weight: 700;
-  font-size: 16px; 
-  padding: 11.2px 19.2px; 
+  font-size: 16px;
+  padding: 11.2px 19.2px;
   border: none;
   border-radius: 24px;
   cursor: pointer;
@@ -251,7 +251,7 @@
   position: absolute;
   top: 16px;
   right: 20px;
-  font-size: 25.6px; 
+  font-size: 25.6px;
   color: #6b4f4f;
   background: none;
   border: none;
@@ -281,20 +281,20 @@
 
 @media (max-width: 1024px) {
   .products-page {
-    padding: 32px 24px; 
+    padding: 32px 24px;
   }
 }
 
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px; 
+    gap: 24px;
   }
 
   .modal-content {
     flex-direction: column;
-    gap: 24px; 
-    padding: 24px; 
+    gap: 24px;
+    padding: 24px;
   }
 
   .modal-image img {
@@ -302,7 +302,7 @@
   }
 
   .products-page h2 {
-    font-size: 25.6px; 
+    font-size: 25.6px;
   }
 }
 
@@ -338,7 +338,7 @@
   }
 
   .modal-content {
-    padding: 19.2px; 
+    padding: 19.2px;
   }
 
   .modal-close {
