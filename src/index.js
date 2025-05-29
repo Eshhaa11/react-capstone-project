@@ -7,7 +7,7 @@ import { WishlistProvider } from './Context/WishlistContext.js'; // import Wishl
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <CartProvider>
-    <WishlistProvider>    {/* Wrap with WishlistProvider */}
+    <WishlistProvider>    
       <App />
     </WishlistProvider>
   </CartProvider>
