@@ -47,7 +47,7 @@
   border-radius: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 16px; /* 1rem */
+  font-size: 16px; 
   text-transform: capitalize;
 }
 
