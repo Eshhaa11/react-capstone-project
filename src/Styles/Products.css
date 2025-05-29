@@ -294,7 +294,7 @@
   .modal-content {
     flex-direction: column;
     gap: 24px; /* 1.5rem */
-    padding: 24px; /* 1.5rem */
+    padding: 24px; 
   }
 
   .modal-image img {
