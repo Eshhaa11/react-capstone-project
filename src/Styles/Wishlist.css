@@ -113,7 +113,7 @@
 
   .wishlist-grid {
     grid-template-columns: 1fr;
-    gap: 19.2px; /* 1.2rem */
+    gap: 19.2px; 
   }
 
   .wishlist-card {
