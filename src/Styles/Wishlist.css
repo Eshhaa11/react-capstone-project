@@ -87,7 +87,7 @@
 
 @media (max-width: 1024px) {
   .wishlist-page {
-    padding: 32px 24px; /* 2rem 1.5rem */
+    padding: 32px 24px; 
   }
 
   .wishlist-grid {
