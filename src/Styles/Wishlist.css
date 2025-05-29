@@ -108,7 +108,7 @@
 /* Extra Small Screens */
 @media (max-width: 480px) {
   .wishlist-page {
-    padding: 32px 16px; /* 2rem 1rem */
+    padding: 32px 16px; 
   }
 
   .wishlist-grid {
