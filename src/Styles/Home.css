@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100%;
   overflow-y: auto;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: #fff;
 }
 
@@ -14,7 +14,8 @@ body.no-scroll-home {
 
 .home-hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center fixed;
   background-size: cover;
   position: relative;
   display: flex;
@@ -22,7 +23,7 @@ body.no-scroll-home {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding: 0 16px; 
+  padding: 0 16px;
 }
 
 .hero-overlay {
@@ -35,30 +36,30 @@ body.no-scroll-home {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 32px; 
+  padding: 32px;
   max-width: 720px;
   width: 100%;
 }
 
 .hero-title {
-  font-size: 38px; 
+  font-size: 38px;
   font-weight: 800;
-  letter-spacing: 1.6px; 
+  letter-spacing: 1.6px;
   margin-bottom: 16px;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
 .hero-tagline {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: 300;
   margin-bottom: 40px;
-  color: #E0E0E0;
+  color: #e0e0e0;
   line-height: 1.4;
 }
 
 .cta-button {
-  background-color: #FAFAF8;
+  background-color: #fafaf8;
   color: #111;
   padding: 16px 40px;
   border-radius: 50px;
@@ -73,13 +74,13 @@ body.no-scroll-home {
 .cta-button:hover,
 .cta-button:focus {
   background-color: #111;
-  color: #FAFAF8;
+  color: #fafaf8;
   box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 768px) {
   .hero-content {
-    padding: 24px; 
+    padding: 24px;
   }
 
   .cta-button {
@@ -90,7 +91,7 @@ body.no-scroll-home {
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 19px; 
+    padding: 19px;
   }
 
   .cta-button {
