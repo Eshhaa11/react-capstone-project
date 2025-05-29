@@ -50,7 +50,7 @@ body.no-scroll-home {
 }
 
 .hero-tagline {
-  font-size: 24px; /* Clamp approx midpoint between 16px and 24px */
+  font-size: 24px; 
   font-weight: 300;
   margin-bottom: 40px;
   color: #E0E0E0;
