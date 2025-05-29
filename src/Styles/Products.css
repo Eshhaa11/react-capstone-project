@@ -86,7 +86,7 @@
   height: 220px;
   object-fit: contain;
   border-radius: 12px;
-  margin-bottom: 16px; /* 1rem */
+  margin-bottom: 16px; 
   background-color: #f5f5f5;
   padding: 10px;
   cursor: pointer;
