@@ -22,7 +22,7 @@ body.no-scroll-home {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding: 0 16px; /* 1rem -> 16px */
+  padding: 0 16px; 
 }
 
 .hero-overlay {
