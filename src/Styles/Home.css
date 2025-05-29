@@ -79,7 +79,7 @@ body.no-scroll-home {
 
 @media (max-width: 768px) {
   .hero-content {
-    padding: 24px; /* 1.5rem -> 24px */
+    padding: 24px; 
   }
 
   .cta-button {
