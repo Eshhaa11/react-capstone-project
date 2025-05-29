@@ -109,7 +109,7 @@
 .description {
   font-weight: 400;
   font-size: 14.4px; /* 0.9rem */
-  margin-bottom: 16px; /* 1rem */
+  margin-bottom: 16px; 
   color: #7b7b7b;
   flex-grow: 1;
 }
