@@ -1,5 +1,5 @@
 .wishlist-page {
-  padding: 48px 32px; 
+  padding: 48px 32px;
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Helvetica Neue", sans-serif;
@@ -8,31 +8,31 @@
 
 .wishlist-page h1 {
   font-weight: 700;
-  font-size: 32px; 
-  margin-bottom: 32px; 
+  font-size: 32px;
+  margin-bottom: 32px;
   color: #6b4f4f;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
 .empty-message {
-  font-size: 19.2px; 
+  font-size: 19.2px;
   color: #a49c9b;
   text-align: center;
-  margin-top: 32px; 
+  margin-top: 32px;
 }
 
 .wishlist-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 32px; 
+  gap: 32px;
 }
 
 .wishlist-card {
   background-color: #fafaf8;
   border-radius: 16px;
   box-shadow: 0 6px 12px rgba(107, 79, 79, 0.1);
-  padding: 22.4px; 
+  padding: 22.4px;
   text-align: center;
   transition: box-shadow 0.3s ease;
   display: flex;
@@ -49,21 +49,21 @@
   height: 220px;
   object-fit: contain;
   border-radius: 12px;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
   background-color: #f5f5f5;
   padding: 10px;
 }
 
 .wishlist-card h3 {
   font-weight: 600;
-  font-size: 18.4px; 
-  margin-bottom: 8px; 
+  font-size: 18.4px;
+  margin-bottom: 8px;
   color: #4a4a4a;
 }
 
 .wishlist-card .price {
   font-weight: 700;
-  font-size: 16px; 
+  font-size: 16px;
   margin-bottom: 16px;
   color: #6b4f4f;
 }
@@ -72,7 +72,7 @@
   background-color: #6b4f4f;
   color: #fafaf8;
   font-weight: 700;
-  font-size: 16px; 
+  font-size: 16px;
   padding: 11.2px 19.2px;
   border: none;
   border-radius: 24px;
@@ -87,11 +87,11 @@
 
 @media (max-width: 1024px) {
   .wishlist-page {
-    padding: 32px 24px; 
+    padding: 32px 24px;
   }
 
   .wishlist-grid {
-    gap: 24px; 
+    gap: 24px;
   }
 }
 
@@ -101,23 +101,22 @@
   }
 
   .wishlist-page h1 {
-    font-size: 25.6px; 
+    font-size: 25.6px;
   }
 }
 
-
 @media (max-width: 480px) {
   .wishlist-page {
-    padding: 32px 16px; 
+    padding: 32px 16px;
   }
 
   .wishlist-grid {
     grid-template-columns: 1fr;
-    gap: 19.2px; 
+    gap: 19.2px;
   }
 
   .wishlist-card {
-    padding: 19.2px; 
+    padding: 19.2px;
   }
 
   .wishlist-card h3 {
@@ -125,7 +124,7 @@
   }
 
   .wishlist-card button {
-    font-size: 15.2px; 
+    font-size: 15.2px;
     padding: 9.6px 16px;
   }
 }
