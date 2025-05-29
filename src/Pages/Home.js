@@ -13,7 +13,8 @@ const Home = () => {
     <div className="home-hero">
       <div className="hero-overlay" />
       <div className="hero-content">
-        <h1 className="hero-title">VibeFits</h1>
+        <h1 className="hero-title">Welcome to <br />
+        VibeFits</h1>
         <p className="hero-tagline">Elevate Your Fit. Own Your Vibe.</p>
         <a href="/products" className="cta-button">
           Explore Collection
