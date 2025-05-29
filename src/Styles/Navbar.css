@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 .navbar {
   display: flex;
@@ -10,7 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
@@ -45,12 +45,12 @@
 .nav-links li a:hover,
 .nav-links li a.active {
   color: #000;
-  border-bottom: 2px solid #6B4F4F;
+  border-bottom: 2px solid #6b4f4f;
 }
 
 .cart-badge,
 .wishlist-badge {
-  background-color: #6B4F4F;
+  background-color: #6b4f4f;
   color: white;
   font-size: 12px;
   font-weight: 700;
@@ -78,7 +78,7 @@
 .menu-toggle .bar {
   height: 3px;
   width: 100%;
-  background-color: #6B4F4F;
+  background-color: #6b4f4f;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -170,7 +170,7 @@
 
   .nav-links li a:hover,
   .nav-links li a.active {
-    color: #6B4F4F;
+    color: #6b4f4f;
     background-color: #f9f5f5;
   }
 
