@@ -21,7 +21,7 @@ const Cart = () => {
     return (
       <div className="cart-empty">
         <h2>Your cart is empty</h2>
-        <p>Looks like you haven’t added anything yet.</p>
+        <p>Looks like you haven't added anything yet.</p>
       </div>
     );
   }
