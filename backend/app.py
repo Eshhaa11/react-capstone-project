@@ -2,13 +2,9 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from config import Config
 from extensions import db, migrate, jwt, mail
-from routes.admin import admin_bp
-from routes.products import products_bp
-
-
-
 
 import models
+
 
 def create_app():
     app = Flask(__name__)
@@ -20,9 +16,6 @@ def create_app():
     jwt.init_app(app)
     mail.init_app(app)
     CORS(app)
-    
-
-
 
     # JWT error handlers for better debugging
     @jwt.unauthorized_loader
@@ -41,13 +34,14 @@ def create_app():
     def revoked_token_callback(jwt_header, jwt_payload):
         return jsonify({"error": "Token has been revoked"}), 401
 
-    # Import blueprints here
+    # Import and register blueprints (⚡ only once each)
     from routes.auth import auth_bp
     from routes.products import products_bp
+    from routes.admin import admin_bp
+
     app.register_blueprint(auth_bp)
     app.register_blueprint(products_bp)
     app.register_blueprint(admin_bp)
-    app.register_blueprint(products_bp)
 
     # Health check
     @app.route("/api/health")
@@ -55,6 +49,7 @@ def create_app():
         return {"status": "ok"}
 
     return app
+
 
 if __name__ == "__main__":
     app = create_app()
